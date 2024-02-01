@@ -37,7 +37,7 @@ console.log(x >= 8);   /* greater than or equal to */
 console.log(x <= 8);  /* less than or equal to */
 console.log(x === 5); /* equal value and equal type */
 console.log(x !== 5);  /* not equal value and not equal type */
-
+   
 // logical operator
 console.log("This is Logical Operator" );
 a = 5;
