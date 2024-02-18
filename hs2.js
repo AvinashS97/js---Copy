@@ -18,7 +18,7 @@ let newName= MyName.trim();
 console.log(newName.length);
 console.log(newName);
 
-// Lowercase & UpperCase
+// Lowercase & UpperCase   
 MyName=MyName.toUpperCase();
 console.log(MyName);
 
