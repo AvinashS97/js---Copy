@@ -17,11 +17,18 @@ else{
     console.log("Odd");
 }
 
-
-
-if (age="" ){
-    console.log("you are not");
+// Falsy Values ---> These values are falsy values means they comes under the else block.
+    /*  False
+        ""
+        null
+        undefined
+        0 
+    */
+// Truthy values ---> character in string or any type of values 
+let FirstName = "";
+if (FirstName){
+    console.log("FirstName");
  }
 else{
-    console.log("YOu are");
+    console.log("FirstName is Empty");
   }

@@ -1,6 +1,2 @@
-if (age>18){
-//     console.log("user can play game...");
-// }
-//  else{
-//      console.log("User can't play game...")
-//  }
+let age = 8;
+// let drink = age >= 5 ? "Milk" : "Coffee" ;
