@@ -21,5 +21,5 @@ console.log(typeof myVariable); /* type of Null is Object but Null is primitive 
 let myNumber= BigInt(1234);
 let myNumber2= 12345n;
 console.log(Number.MAX_SAFE_INTEGER);
-console.log(myNumber+ myNumber2); /*we can't perform any action on BigInt and Other types */
+console.log(myNumber + myNumber2); /*we can't perform any action on BigInt and Other types */
 console.log(myNumber2);
