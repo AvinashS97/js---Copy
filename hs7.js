@@ -25,17 +25,17 @@ console.log(c);
 // AND OR Operator 
 
 // AND Operator ---> it check that all condition are true.
-let Fname = "Avinash"
+let Fname = "Avinash";
 let Fage = 18;
 if  (Fname[0] == "A" && Fage >= 18){
-    console.log("Name starts with A and you are eligible...")
+    console.log("Name starts with A and you are eligible...");
 } 
 else{
-    console.log("You are not eligible...")
+    console.log("You are not eligible...");
 }
 
 // OR Operator ---> it check that any condition is true .
-let Fname1 = "Avinash"
+let Fname1 = "Avinash";
 let Fage1 = 16;
 if  (Fname1[0] == "A" || Fage1 >= 18){
     console.log("Name starts with A and you are eligible...")

@@ -37,16 +37,33 @@ else{
   }
 
 // Nested If-else 
-let winningNumber = 18;
-let UserGuess = +prompt("Guess The Number...");
-if (UserGuess === winningNumber){
-    console.log("You Won 🎉");
-}
-else{
-    if (UserGuess< winningNumber){
-        console.log("Your guess is low 😒");
-    }
-    else{
-        console.log("Your guess is High 🤣")
-    }
+// let winningNumber = 18;
+// let UserGuess = +prompt("Guess The Number...");
+// if (UserGuess === winningNumber){
+//     console.log("You Won 🎉");
+// }
+// else{
+//     if (UserGuess< winningNumber){
+//         console.log("Your guess is low 😒");
+//     }
+//     else{
+//         console.log("Your guess is High 🤣")
+//     }
+// }
+
+//  else-If
+let tempInDegree = 15;
+
+if (tempInDegree<0){
+    console.log("Extremely cold outside🥶");
+}else if (tempInDegree<16){
+    console.log("It is cold outside🤧");
+}else if (tempInDegree<25){
+    console.log("Wheather is okay🕺");
+}else if (tempInDegree<35){
+    console.log("lets go for swim🏊‍♂️");
+}else if (tempInDegree<45){
+    console.log("turn on the AC🕺");
+}else{
+    console.log("Too hot😩");
 }
