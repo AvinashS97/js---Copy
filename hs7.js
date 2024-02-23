@@ -42,4 +42,5 @@ if  (Fname1[0] == "A" || Fage1 >= 18){
 } 
 else{
     console.log("You are not eligible...")
-}
+} 
+

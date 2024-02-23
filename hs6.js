@@ -11,7 +11,7 @@ else{
      console.log("User can't play game...")
  }
 
-//Ques. Find the no. is odd or even. 
+// //Ques. Find the no. is odd or even. 
 let num= 41
 if(num%2===0){
     console.log("Even");
@@ -37,3 +37,16 @@ else{
   }
 
 // Nested If-else 
+let winningNumber = 18;
+let UserGuess = +prompt("Guess The Number...");
+if (UserGuess === winningNumber){
+    console.log("You Won 🎉");
+}
+else{
+    if (UserGuess< winningNumber){
+        console.log("Your guess is low 😒");
+    }
+    else{
+        console.log("Your guess is High 🤣")
+    }
+}
