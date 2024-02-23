@@ -1,5 +1,8 @@
 // If-else condition
+// Nested If-else
+//  else-If
 
+// If-else condition
 let age = 18;
 if (age>18){
     console.log("user can play game...");
@@ -8,7 +11,7 @@ else{
      console.log("User can't play game...")
  }
 
-// Find the no. is odd or even. 
+//Ques. Find the no. is odd or even. 
 let num= 41
 if(num%2===0){
     console.log("Even");
@@ -32,3 +35,5 @@ if (FirstName){
 else{
     console.log("FirstName is Empty");
   }
+
+// Nested If-else 
