@@ -36,7 +36,7 @@ else{
     console.log("FirstName is Empty");
   }
 
-// Nested If-else 
+// Nested If-else ---> means one inside the other... 
 // let winningNumber = 18;
 // let UserGuess = +prompt("Guess The Number...");
 // if (UserGuess === winningNumber){
