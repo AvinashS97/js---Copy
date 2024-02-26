@@ -1,2 +1,5 @@
-let age = 8;
-// let drink = age >= 5 ? "Milk" : "Coffee" ;
+or(let i=0; true; i++){
+//     if(i==7)
+//     break;
+//      console.log(i);
+// }
