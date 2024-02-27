@@ -1,5 +1,6 @@
 // While Loop
 // For Loop
+// Do while loop
 
 // While Loop
 // Ex---> print 1 to 10
@@ -52,7 +53,7 @@ for(let i=0; true; i++){
      console.log(i);
 }
 
-// Continue Keyword---> it stop the function and reexecte the code from next.
+// Continue Keyword---> it stop the function and re-execte the code from next.
 for(let i=1; i<=10; i++){
     if(i==4){
         continue;
@@ -67,4 +68,20 @@ let n=10;
 for(let i=1; i<=n; i++){
     t= t+i;
 }
-console.log("su of n number is "+t);
+console.log("sum of n number is "+t); 
+
+// Do while loop
+
+// let o=0;
+// while(o<=10){
+//     console.log(`value of o is ${o};`);
+//     o++
+// } 
+
+let o=10;
+do{
+    console.log(o);
+    o++;
+}
+while(o<=9);
+console.log( "value of o is "+o)
