@@ -1,2 +1,3 @@
-
-console.log(fruits);
+fruits);
+fruits.unshift("banana");
+console.log(

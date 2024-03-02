@@ -1,13 +1,21 @@
 // Arrays Methods
-//PUSH, POP, SHIFT, UNSHIFT
+//PUSH, POP, SHIFT, UNSHIFT ---> push & Pop is fast than shift & Unshift.
 
-//push methods ---> Add new element.
 let fruits=["apple", "Mango", "Grapes"];
-//fruits.push("banana"); 
-console.log(fruits);
+//push methods ---> Add new element in last.
+// fruits.push("banana"); 
+// console.log(fruits);
 
 // pop Method ---> it will remove the last element
 // fruits.pop()
+// let popfruit= fruits.pop();
+// console.log("popped fruit is " +popfruit);
 // console.log(fruits);
-fruits.unshift("banana");
-console.log(fruits);
+
+// Unshift Method ---> it will add new element in starting of Array.
+// fruits.unshift("banana");
+// console.log(fruits);  
+
+// Shift Method --->  remove starting element.
+fruits.shift();
+console.log(fruits)
