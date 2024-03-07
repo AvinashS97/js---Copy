@@ -18,4 +18,4 @@ let fruits=["apple", "Mango", "Grapes"];
 
 // Shift Method --->  remove starting element.
 fruits.shift();
-console.log(fruits)
+console.log(fruits) 
