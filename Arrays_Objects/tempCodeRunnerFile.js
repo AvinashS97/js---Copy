@@ -1,3 +1,2 @@
-fruits);
-fruits.unshift("banana");
-console.log(
+
+// console.log(fruits[fruits.l
