@@ -30,4 +30,4 @@ let arr2= [...arr1, ...arr3 ];
 // arr1.push("item3");
 console.log("arr1 is ",arr1);
 console.log("arr2 is ",arr2);
-console.log(arr1 ===arr2 );
+console.log(arr1 === arr2 );

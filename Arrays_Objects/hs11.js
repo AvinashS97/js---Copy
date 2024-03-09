@@ -19,3 +19,6 @@ let fruits=["apple", "Mango", "Grapes"];
 // Shift Method --->  remove starting element.
 fruits.shift();
 console.log(fruits) 
+
+var arr=[10,1,2,3].shift()
+console.log("shifted value is:" +arr)
