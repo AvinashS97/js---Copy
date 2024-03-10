@@ -16,3 +16,8 @@ console.log(mixed);
 // Type of array is Objec t
 console.log(typeof fruits);
 console.log(Array.isArray(fruits)); // to check it is arrays or not
+
+// Use Const for creating array
+const fru = ["apple", "mango", "grapes"];
+fru.push("banana");
+console.log(fru);
