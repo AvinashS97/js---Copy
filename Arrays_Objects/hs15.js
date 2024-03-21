@@ -8,3 +8,4 @@ console.log(person);
 console.log(person.name);//Access of data in Object
 person.SurName= "Sharma"; //Add new key value in Object
 console.log(person);
+
