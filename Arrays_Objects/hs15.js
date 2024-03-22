@@ -5,7 +5,11 @@ const person={
     age:20,
 };
 console.log(person);
-console.log(person.name);//Access of data in Object
-person.SurName= "Sharma"; //Add new key value in Object
+//Access of data in Object
+console.log(person.name);
+console.log(person["age"]);
+//Add new key value in Object
+person.SurName= "Sharma"; 
+person["gender"]= "male";
 console.log(person);
-
+// STC Linkdin marketing, google ads marketing, event management,Team management
