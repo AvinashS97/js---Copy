@@ -3,13 +3,19 @@
 const person={
     name:"Avinash",    
     age:20,
+    "person hobbies": ["Football","Cricket", "Music"],
 };
 console.log(person);
+
 //Access of data in Object
 console.log(person.name);
 console.log(person["age"]);
+console.log(person["person hobbies"]); //Access ddata with Sq. Bracket
+
 //Add new key value in Object
 person.SurName= "Sharma"; 
 person["gender"]= "male";
+
+const key= "email";
+person[key]= "avinash@gmail.com";
 console.log(person);
-// STC Linkdin marketing, google ads marketing, event management,Team management
