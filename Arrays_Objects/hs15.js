@@ -10,7 +10,7 @@ console.log(person);
 //Access of data in Object
 console.log(person.name);
 console.log(person["age"]);
-console.log(person["person hobbies"]); //Access ddata with Sq. Bracket
+console.log(person["person hobbies"]); //Access data with Sq. Bracket
 
 //Add new key value in Object
 person.SurName= "Sharma"; 

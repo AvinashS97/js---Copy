@@ -14,11 +14,11 @@ const person={
     // console.log( person[key]);
     // console.log(`${key}:${person[key]}`);
     // console.log(key ,":",person[key]);
-// }
-// console.log(Object.keys(person))
+// }// it show the key of the object
+// console.log("ObjectKey",Object.keys(person)) 
 
 // for(let key of Object.keys(person)){
-//     console.log( person[key]);
+//     console.log(person[key]);
 // }
 
 // Computed Properties
@@ -42,15 +42,15 @@ const person={
 // console.log(Newarray3);
                      
 // Spread Operator in Object
-const obj1={   
-    key1:"value1",
-    key2:"value2",
-}
-const obj2={
-    key1:"valueChange",
-    key3:"value3",
-    key4:"value4",
-};
+// const obj1={   
+//     key1:"value1",
+//     key2:"value2",
+// }
+// const obj2={
+//     key1:"valueChange",
+//     key3:"value3",
+//     key4:"value4",
+// };
 // const newObject={...obj1, ...obj2, key10:"value10"};
 // const newObject= {..."abc"};
 // console.log(newObject)
@@ -88,6 +88,7 @@ const users =[
 // const [user1, user2, user3]= users;
 // console.log(user1); 
     
-const[{firstname}, ,{gender} ]= users;
-console.log(firstname);
-console.log(gender);
+// const[{firstname}, ,{gender} ]= users;
+// console.log(firstname);
+// console.log(gender);
+
