@@ -70,18 +70,18 @@ const band={
 // console.log(famousSong);
 // console.log(restprp);
 
-// Objects inside Array ---> too store large number of values...
+// Objects inside Array ---> to store large number of values...
 
 const users =[
     {userid: 1, firstname:"Avinash", gender: "male"}, 
     {userid: 2, firstname:"Avv", gender: "male"}, 
     {userid: 3, firstname:"Shh", gender: "Female"},
 ];
-// console.log(users);
-// for(let user of users){
-//     console.log(user);
-    // console.log(user.userid);
-// }
+console.log(users);
+for(let user of users){
+    // console.log(user); 
+    console.log(user.userid);
+}
 
 // Nested destructuring
 
