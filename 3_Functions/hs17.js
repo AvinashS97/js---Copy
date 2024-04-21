@@ -1,16 +1,7 @@
-function myFunc(theObject) {
-    theObject.make = "Toyota";
-  }
-  const mycar = {
-    make: "Honda",
-    model: "Accord",
-    year: 1998,
-  };  
-  console.log(mycar.make); // "Honda"
-//   myFunc(mycar);
-  console.log(mycar.make); // "Toyota"
+//Function Declaration
+//Function Expression
 
-
+//Function Declaration
 function singsong(){
   console.log("happy Birthday");
 }
@@ -28,5 +19,35 @@ function EvenOdd(number){
   }
     return false;
   }
-  
 console.log(EvenOdd(4));
+
+//Print first Char.
+function firstchar(anystring){
+  return anystring[0];
+}
+console.log(firstchar("Avinash"));
+
+//find the number in arra
+
+function findTarget(array, target){
+  for (i=0; i<array.length; i++){
+    if (array[i]===target){
+      return i;
+    }
+  }return -1;
+}
+
+const MyArray = [1,12,8,6,78,99]
+const ans= findTarget(MyArray,99);
+console.log(ans);
+
+//Function Expression
+const song= function(){
+  console.log("Happy Birthday 2 U song");
+}
+song();
+
+const iseven=function(number){
+  return number%2 === 0;
+}
+console.log(iseven(2))
