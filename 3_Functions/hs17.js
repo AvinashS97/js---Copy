@@ -27,7 +27,7 @@ function firstchar(anystring){
 }
 console.log(firstchar("Avinash"));
 
-//find the number in arra
+//find the number in array
 
 function findTarget(array, target){
   for (i=0; i<array.length; i++){
@@ -50,4 +50,4 @@ song();
 const iseven=function(number){
   return number%2 === 0;
 }
-console.log(iseven(2))
+console.log(iseven(2));
