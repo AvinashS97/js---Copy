@@ -28,4 +28,5 @@ function EvenOdd(number){
   }
     return false;
   }
+  
 console.log(EvenOdd(4));
