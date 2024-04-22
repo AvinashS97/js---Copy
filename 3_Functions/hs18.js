@@ -1,4 +1,8 @@
+// Array Function
+// Hoisting
+// funtion inside fns
 
+//Array Fns
 const sum = (num1, num2, num3) => {
     return num1 + num2 + num3;
 }
@@ -12,3 +16,21 @@ song();
 const iseven= number =>
     number%2 === 0;
 console.log(iseven(2));
+
+// Hoisting---> Declaration are moved to the top of functions scope during execution.
+hello();
+function hello(){
+  console.log("hello World");
+}
+
+// funtion inside fns
+
+const app = () =>{
+  const myfun1=() =>{
+    console.log("1st function in funs")
+  }  
+  console.log("inside function");
+  myfun1();
+}
+
+app(); 
