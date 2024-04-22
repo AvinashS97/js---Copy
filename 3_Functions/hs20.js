@@ -31,8 +31,14 @@ const person ={
     gender: "male",
 }
 
-function Details(obj){
-    console.log(obj.firstN);
-    console.log(obj.gender); 
+// function Details(obj){
+//     console.log(obj.firstN);
+//     console.log(obj.gender); 
+// }
+// Details(person)
+
+function Details({firstN, gender}){
+    console.log(firstN);
+    console.log(gender); 
 }
 Details(person)
