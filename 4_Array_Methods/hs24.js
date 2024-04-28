@@ -86,7 +86,7 @@ function even(number){
     return number %2 ===0;
 }
 
-console.log( "even no is present-",ans);
+// console.log( "even no is present-",ans);
 
 //check every product is < 60000
 // const user =[
