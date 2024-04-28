@@ -75,17 +75,18 @@ function element(x) {
 // Method (return element > 0).
 let foundP = array.find(element);
 
-console.log(foundP);
+// console.log(foundP);
 
 
-//Every Method
-// const numbers=[2,4,8,10,18];
-// const ans= numbers.every((number) => number%2===0);
-// function even(number){
-    // return number %2 ===0;
-// }
-// const ans = numbers.every(even);
-// console.log(ans);
+//Every Method ---> It checks if all elements pass th especified test. return in true is it satisfied otherwise false.
+
+const numbers=[2,4,8,10,18];
+const ans= numbers.every((number) => number%2===0);
+function even(number){
+    return number %2 ===0;
+}
+
+console.log( "even no is present-",ans);
 
 //check every product is < 60000
 // const user =[
@@ -103,7 +104,7 @@ function great4(item){
     return item > 4;
 }
 const outputsum= sumnum.some(great4);
-console.log(outputsum);
+// console.log(outputsum);
 
 
 const person =[
@@ -115,4 +116,4 @@ function Adult(person){
 }
 
 const resultPerson = person.some(Adult);
-console.log(resultPerson);
+// console.log(resultPerson);
