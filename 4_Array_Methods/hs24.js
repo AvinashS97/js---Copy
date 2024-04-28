@@ -88,14 +88,14 @@ function even(number){
 
 // console.log( "even no is present-",ans);
 
-//check every product is < 60000
-// const user =[
-//         {id: 1, productName: "Mobile", price: 12000},
-//         {id: 1, productName: "Tablet", price: 14000},
-//         {id: 1, productName: "Led Tv", price: 19000},
-//         {id: 1, productName: "Laptop", price: 54000},
-//     ]
-// const rs =user.every((cartitem) => cartitem.price <60000);
+// checking that every product's price is < 60000
+const user =[
+        {id: 1, productName: "Mobile", price: 12000},
+        {id: 1, productName: "Tablet", price: 14000},
+        {id: 1, productName: "Led Tv", price: 19000},
+        {id: 1, productName: "Laptop", price: 54000},
+    ]
+const rs =user.every((cartitem) => cartitem.price <60000);
 // console.log(rs);
 
 // //Some Method---> to check specific value or character 
