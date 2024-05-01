@@ -1,8 +1,9 @@
-// Reduce Method
-//Sort Method
+// REDUCE METHOD
+// SORT METHOD
+// FIND METHOD
 
 
-// Reduce Method
+// REDUCE METHOD
 
 let arr1 = [175, 50, 25];
 
@@ -40,13 +41,14 @@ const Amount = user1.reduce((totalPrice, currentPrice) => {
 
 // console.log(Amount);
 
-//Sort Method
+//SORT METHOD
+
 // In string sorting uses the ASCII Code
 const sort1=[222,54,67,11]
 sort1.sort() 
 // console.log(sort1);
 
-//Find method
+//FIND METHOD
 const myArray = ["hello", "cat", "dog", "lion"];
 function isLength3(string){
     return string.length === 3;
@@ -76,44 +78,3 @@ function element(x) {
 let foundP = array.find(element);
 
 // console.log(foundP);
-
-
-//Every Method ---> It checks if all elements pass th especified test. return in true is it satisfied otherwise false.
-
-const numbers=[2,4,8,10,18];
-const ans= numbers.every((number) => number%2===0);
-function even(number){
-    return number %2 ===0;
-}
-
-// console.log( "Even no is present-",ans);
-
-// checking that every product's price is < 60000
-const user =[
-        {id: 1, productName: "Mobile", price: 12000},
-        {id: 1, productName: "Tablet", price: 14000},
-        {id: 1, productName: "Led Tv", price: 19000},
-        {id: 1, productName: "Laptop", price: 54000},
-    ]
-const rs =user.every((cartitem) => cartitem.price <60000);
-// console.log("All the product are above 6000-",rs);
-
-// //Some Method---> to check specific value or character 
-const sumnum = [3,6,8,9,1,2];
-function great4(item){
-    return item > 4;
-}
-const outputsum= sumnum.some(great4);
-// console.log("Atleast one value is greater than 4-",outputsum);
-
-
-const person =[
-    {name : "Avinash", age: 2},
-    {name : "Aman", age: 22.5,}
-]
-function Adult(person){
-    return person.age >=18;
-}
-
-const resultPerson = person.some(Adult);
-// console.log("Atleast one peron is over 18-",resultPerson);
