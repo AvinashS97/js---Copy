@@ -55,7 +55,8 @@ const array = [1, 2, 3, 4];
 const fillar= array.fill(0, 2, 4);
 // console.log(fillar);
 
-//SPLICE METHOD ---> 
+//SPLICE METHOD ---> It is used to change the contents of an array by removing/replacing existing elements and/or adding new elements
+// SYNTAX: Array.splice( index, remove_count, item_list )
 const splicearray=['item1', 'item2', 'item3','item4']
 const del1= splicearray.splice(1,1,"del");
 console.log(del1); //print the deleted items
