@@ -1,8 +1,6 @@
 // ITERABLES
 // SETS
-// MAPS
-// OBJECT. ASSIGN
-// OPTIONAL CHAINING
+
 
 // ITERABLES ---> the data structure that have the symbol.iterator() method.
 //Ex:- Array,Strings, Set etc are iterables. 
