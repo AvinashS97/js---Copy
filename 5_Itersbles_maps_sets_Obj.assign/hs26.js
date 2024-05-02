@@ -23,7 +23,20 @@ const users = {key1:"value1", key2:2, key3:3 }
 // }
 
 // SETS --->
+const num= new Set();
+num.add(1)
+num.add(2)
+num.add(3)
+num.add(["item"])
+num.add(items)
+console.log(num)
+
+
 const numset=new Set([1,2,3,4,5]);
 for (let num of numset){
-    console.log(num); // sets are iterables.
+    // console.log(num); // sets are iterables.
 }
+
+const myarray= [1,2,4,4,5,6,5,6];
+const unique= new Set(myarray);
+console.log(unique); // convert into set without duplication of element.
