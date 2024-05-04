@@ -39,17 +39,34 @@ const person3 ={
 // person3.about();   //person name is Sumit and age is 22
 
 // WINDOW OBJECTS
-const user1={
-    firstname:"Avinash",
-    age: 19,
-    about: function(){
-        console.log(`Name is ${this.firstname} and age is ${this.age}`)
-    }
+// const user1={
+//     firstname:"Avinash",
+//     age: 19,
+//     about: function(){
+//         console.log(`Name is ${this.firstname} and age is ${this.age}`)
+//     }
+// }
+
+// const user2={
+//     firstname:"Sumit",
+//     age: 18,
+// }
+// user1.about();
+// user1.about.call(user2); //call
+
+function about(hobby,favsinger){
+    console.log(`Name is ${this.firstname} and age is ${this.age},${hobby},${favsinger}`)
 }
 
+const user1={
+        firstname:"Avinash",
+        age: 19,}
+
 const user2={
-    firstname:"Sumit",
-    age: 18,
-}
-user1.about()
-user1.about.call(user2)
+        firstname:"Sumit",
+        age: 18,
+    }
+about.call(user2,"Singing", "ChahatFatehAliKhan")
+about.apply(user1,["singing","ChahatFateh"])//apply
+const func_bind=about.bind(user1,"singing","ChahatFateh")//bind->it store in function
+func_bind();
