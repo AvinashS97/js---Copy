@@ -67,6 +67,14 @@ const user2={
         age: 18,
     }
 about.call(user2,"Singing", "ChahatFatehAliKhan")
-about.apply(user1,["singing","ChahatFateh"])//apply
+about.apply(user1,["singing","ChahatFateh"]) //apply
 const func_bind=about.bind(user1,"singing","ChahatFateh")//bind->it store in function
 func_bind();
+
+// Alert ---> alert() method displays an alert box with a message and an OK button.
+
+
+// The confirm() method displays a dialog box with a message, an OK button, and a Cancel button.
+
+
+// The prompt() method displays a dialog box that prompts the user for input.
