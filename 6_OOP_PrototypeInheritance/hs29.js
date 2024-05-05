@@ -35,22 +35,46 @@ const user2={
 // Window OBJECT Properties
 
 // Alert ---> alert() method displays an alert box with a message and an OK button.
-let a = window
-alert('hello')
+// let a = window
+// alert('hello')
 // console.log(a);
 
 // PROMPT() ---> The prompt() method displays a dialog box that prompts the user for input.
-let b= window;
-b= prompt("this is prompt");
+// let b= window;
+// b= prompt("this is prompt");
 // console.log(b)
 
 // Confirm() ---> The confirm() method displays a dialog box with a message, an OK button, and a Cancel button.
-let c=window;
-c=confirm('are you okay');
+// let c=window;
+// c=confirm('are you okay');
 // console.log(c);
 
 //innerHeight abd innerWidth
-d=innerHeight;
-e=innerWidth;
-console.log(d);
-console.log(e);
+// d=innerHeight;
+// e=innerWidth;
+// console.log(d);
+// console.log(e);
+// console.log(navigator)
+
+let url= "https://www.google.com";
+let features = "height=500,width=500";
+
+// let win;
+
+// let btn1 = document.getElementById("btn1");
+// let btn2 = document.getElementById("btn2");
+
+// btn1.addEventListener('click', function(){
+//     win = window.open(url,"google",features);
+// });
+
+// btn2.addEventListener('click',function(){
+//     win.close();
+// });
+var mywin;
+function openw(){
+    mywin=window.open(url,'google',features);
+}
+function closew(){
+    mywin.close();
+}
