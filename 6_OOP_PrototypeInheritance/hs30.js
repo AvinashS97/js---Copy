@@ -35,3 +35,17 @@ console.log(student2);
 // const person2= new person()
 // console.log(person1.age);
 // console.log(person2.age);
+
+//Example to add a new prpty to the object
+
+function Student(a, b) {
+	this.name = a;
+	this.id = b;
+}
+
+Student.prototype.age = 12;
+
+const s1 = new Student("Dinesh", 1234567);
+
+console.log(s1.name +
+	" is " + s1.age + " years old.");
