@@ -40,7 +40,16 @@ class person{
     get fullname(){
         return `${this.firstN} ${this.lastN}`
     }
+    set fullname(fullname){
+        const [firstN, lastN]=fullname.split(" ");
+        this.firstN = firstN;
+        this.lastN = lastN;
+    }
 }
 const person1 = new person("Avinash", "Sharma", 9);
 console.log(person1);
-console.log(person1.fullname);
+person1.fullname = "Aman Singh"
+console.log(person1.fullname); // Aman Singh
+console.log(person1.firstN); // Aman
+console.log(person1.lastN); // Singh
+
