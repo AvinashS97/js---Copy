@@ -1,4 +1,5 @@
 //STATIC METHOD & PROPERTIES
+// SUPER KEYWORD
 
 // “this” keyword is used to call a static method within any other static method in JavaScript.
 // static keyword is used before the function name
@@ -14,3 +15,5 @@ class Person{
      }
 }
 Person.greet();
+
+// Super keyword in JavaScript can be used to access and call on an object’s parent, it can be used in two ways.
