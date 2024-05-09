@@ -37,6 +37,7 @@ class person{
         this.lastN = lastN;
         this.age1 = age1;
     }
+
     get fullname(){
         return `${this.firstN} ${this.lastN}`
     }

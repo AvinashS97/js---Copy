@@ -39,7 +39,7 @@ const person2 = new person("Aman", "Singh");
 // console.log(person1);
 // console.log(person2);
 
-//Changing value 
+//Changing value with prototype
 
 function p(){
     this.name ="Elon Musk"
