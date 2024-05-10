@@ -12,5 +12,4 @@ function fns1(callback){
 }
 fns1(fns2());
 
-// Fns Returning fns
 

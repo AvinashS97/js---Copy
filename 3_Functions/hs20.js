@@ -1,5 +1,6 @@
 //Default parameter
 //rest parameter
+//parameter Destructuring
 
 function add(a,b){
     if(typeof b ==="undefined"){

@@ -1,4 +1,4 @@
-// Lexical Scope ---> inner scope have access of outer scope
+// LEXICAL SCOPE ---> inner scope have access of outer scope
 
 function outer(){
     let username = "Avinash";
