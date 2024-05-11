@@ -27,6 +27,7 @@ else{
         undefined
         0 
     */
+
 // Truthy values ---> character in string or any type of values 
 let FirstName = "";
 if (FirstName){
@@ -37,6 +38,7 @@ else{
   }
 
 // Nested If-else ---> means one inside the other... 
+
 // let winningNumber = 18;
 // let UserGuess = +prompt("Guess The Number...");
 // if (UserGuess === winningNumber){

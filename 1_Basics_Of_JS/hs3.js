@@ -30,6 +30,7 @@ let string1= "Avinash";
 let string2= "Kumar";
 let fullName = string1 + "  " +  string2;
 console.log(fullName);
+
 // concatenation in additiion
 let newString1 = "17";
 let newString2 = "04";
