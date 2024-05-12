@@ -15,6 +15,35 @@ function codeHoist() {
 codeHoist();
 
 console.log(a); // 10
-console.log(b); // ReferenceError : b is not defined
+// console.log(b); // ReferenceError : b is not defined
 
-// hoisting allows variables declared with var to be accessed before declaration, but not those declared with let or const. Thus, a is accessible, but b throws a ReferenceError
+// hoisting allows variables declared with var to be accessed before declaration, but not those declared with let or const. Thus, a is accessible, but b throws a ReferenceError.
+
+// JavaScript Var hoisting
+let name;
+console.log(name); // undefined
+name = 'Mukul Latiyan';// referenceError
+// Variables declared with let or const do not exhibit this behavior.
+
+// Function scoped
+// function fun() {
+//     console.log(name);
+//     let name = 'Mukul Latiyan';
+//   }
+//   fun(); // Undefined
+
+  //or
+
+function fun() {
+    let name;
+    console.log(name);
+    name = 'Mukul Latiyan';
+  }
+  fun(); // undefined
+  
+
+fun();
+function fun() { // Declaring
+    console.log("Function is hoisted");
+}
+  
