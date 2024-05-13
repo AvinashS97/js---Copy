@@ -21,8 +21,8 @@ console.log(a); // 10
 
 // JavaScript Var hoisting
 // var code (global)
-console.log(name1); // undefined
-let name1 = 'Mukul Latiyan';
+// console.log(name1); // undefined
+// let name1 = 'Mukul Latiyan';
 
 
 let name;
@@ -51,3 +51,13 @@ fun();
 function fun() { // Declaring
   console.log("Function is hoisted");
 }
+
+//lexicaol envt...
+const lastname = "sharma";
+const printname = function(){
+  const firstname = "Avinash";
+  console.log(firstname);
+  console.log(lastname); // it find lastname from there parent global execution context
+}
+printname();
+
