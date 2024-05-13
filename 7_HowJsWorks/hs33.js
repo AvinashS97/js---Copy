@@ -52,7 +52,7 @@ function fun() { // Declaring
   console.log("Function is hoisted");
 }
 
-//lexicaol envt...
+//lexical envt...
 const lastname = "sharma";
 const printname = function(){
   const firstname = "Avinash";
