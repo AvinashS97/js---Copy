@@ -1,5 +1,17 @@
-//CLOSURES ---> A closure gives you access to an outer function's scope from an inner function.
+//CLOSURES ---> A closure is the combination of a fns bundled together.
+//closure give us access to an outer fns scope from an inner fns.
 //function can return functions
+
+// lexical Scoping
+
+function outer(){
+    let name = "Avinash";
+    function inner(){
+        console.log(name);
+    }
+    inner(); // inner fns have access to the variable of outer fns.
+}
+outer();
 
 function outerFunction(){
     function innerFunction(){
