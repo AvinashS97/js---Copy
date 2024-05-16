@@ -30,3 +30,12 @@ function outerFunction(){
 const ans = outerFunction();// 
 // console.log(ans);
 ans();
+
+function printFName(fname, lname){
+    function printName(){
+        console.log(fname, lname);
+    }
+    return printName;
+}
+const output = printFName("Avinash", "Sharma");
+output();
