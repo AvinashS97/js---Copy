@@ -27,3 +27,16 @@ a{
     margin: auto;
     width: 90%;
 }
+
+.nav{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
