@@ -68,5 +68,15 @@ a{
 .section-todo{
     margin-top: 5rem;
     text-align: center;
-    
+
+}
+
+.form-todo{
+    border: 2px;
+    min-height: 5vh;
+    display: flex;
+}
+
+.form-todo input{
+    height: 100%;
 }
