@@ -72,11 +72,22 @@ a{
 }
 
 .form-todo{
-    border: 2px;
+
     min-height: 5vh;
     display: flex;
+    justify-content: space-between;
 }
 
 .form-todo input{
     height: 100%;
+}
+
+.form-todo input[type="text"]{
+    width: 78%;
+}
+
+.form-todo input[type="submit"]{
+    width: 20%;
+    background: #1b1d1e;
+
 }
