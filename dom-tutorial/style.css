@@ -84,10 +84,14 @@ a{
 
 .form-todo input[type="text"]{
     width: 78%;
+    /* padding: 0.8rem; */
+     
 }
 
 .form-todo input[type="submit"]{
     width: 20%;
+    height: 2.6vh;
     background: #1b1d1e;
-
+    color: white;
+    font-weight: bold;
 }
