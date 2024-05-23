@@ -95,3 +95,22 @@ a{
     color: white;
     font-weight: bold;
 }
+
+.section-signup{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.signup-form{
+    max-width: 800px;
+    width: 95%;
+    margin: auto;
+}
+
+.signup-form label {
+    display: block;
+}
+.signup-form input {
+    display: block;
+    width: 100%;
+}
