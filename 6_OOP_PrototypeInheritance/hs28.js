@@ -21,7 +21,7 @@ function info(){
 const person1 ={
     firstName: "Mohit",
     age: 18,
-    about: info
+    about: info 
 }
 const person2 ={
     firstName: "Avinash",
