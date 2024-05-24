@@ -49,8 +49,8 @@ class person{
 }
 const person1 = new person("Avinash", "Sharma", 9);
 console.log(person1);
-person1.fullname = "Aman Singh"
-console.log(person1.fullname); // Aman Singh
+person1.fullname = "Aman Kumar"
+console.log(person1.fullname); // Aman Kumar
 console.log(person1.firstN); // Aman
-console.log(person1.lastN); // Singh
+console.log(person1.lastN); // Kumar
 

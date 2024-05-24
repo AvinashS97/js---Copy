@@ -25,7 +25,7 @@ const s1 = new Student("Dinesh", 1234567);
 
 // console.log(s1.name + " is " + s1.age + " years old.");
 
-// functions can be treated as Objects... functions + objects
+// functions can be treated as Objects ... functions + objects.
 
 function person(fname,lname){
     this.firstname = fname
