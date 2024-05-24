@@ -22,7 +22,7 @@
 // } 
 
 // for of loop in array
-const fruits2=["Apple","Mango","Grapes","fruitsN4","fruitN5"];
+const fruits2=["Apple","Mango","Grapes","fruits4","fruit5"];
 for(let fruits of fruits2){
 console.log(fruits.toUpperCase());
 }
