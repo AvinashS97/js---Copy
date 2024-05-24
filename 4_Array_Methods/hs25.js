@@ -15,10 +15,10 @@ function even(number){
 
 // checking that every product's price is < 60000
 const user =[
-        {id: 1, productName: "Mobile", price: 12000},
+        {id: 1, productName: "Mobile", price: 12999},
         {id: 1, productName: "Tablet", price: 14000},
         {id: 1, productName: "Led Tv", price: 19000},
-        {id: 1, productName: "Laptop", price: 54000},
+        {id: 1, productName: "Laptop", price: 54999},
     ]
 const rs =user.every((cartitem) => cartitem.price <60000);
 // console.log("All the product are above 6000-",rs);

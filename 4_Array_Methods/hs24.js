@@ -29,7 +29,7 @@ console.log((sum));
 // console.log(arr2.reduce(sum,500)); //we can change initial value i.e.,500
 
 const user1 =[
-    {id: 1, productName: "Mobile", price: 12000},
+    {id: 1, productName: "Mobile", price: 12999},
     {id: 1, productName: "Tablet", price: 14000},
     {id: 1, productName: "Led Tv", price: 19000},
     {id: 1, productName: "Laptop", price: 54000},

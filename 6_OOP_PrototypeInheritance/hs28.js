@@ -19,7 +19,7 @@ function info(){
     console.log(`person name is ${this.firstName} and age is ${this.age}`);
 }
 const person1 ={
-    firstName: "Mohit",
+    firstName: "Rohit",
     age: 18,
     about: info 
 }
@@ -34,6 +34,6 @@ const person3 ={
     about: info
 }
 // console.log(info); //print only info fns
-// person1.about();   //person name is Mohit and age is 18
+// person1.about();   //person name is Rohit and age is 18
 // person2.about();   //person name is Avinash and age is 20
 // person3.about();   //person name is Sumit and age is 22
