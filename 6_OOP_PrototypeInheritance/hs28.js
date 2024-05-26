@@ -37,3 +37,6 @@ const person3 ={
 // person1.about();   //person name is Rohit and age is 18
 // person2.about();   //person name is Avinash and age is 20
 // person3.about();   //person name is Sumit and age is 22
+
+// WINDOW OBJECT---> The window object represents an open window in a browser. It is browser's objct (not js) & is automatically created by browser.
+// It is a global object with lost of prpts & methods.
