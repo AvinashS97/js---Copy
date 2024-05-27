@@ -3,5 +3,10 @@
 // When a web page is loaded, the browser creates a Document Object Model (DOM) of the page.
 // HTML ko JavaScript ke andr access krne ka tarika DOM kehlata hai.
 
-console.dir(document.body);
-console.log(document.body);
+// console.dir(document.body);
+// console.log(window.document);
+// console.dir(document);
+
+// Select element using getElementById...
+
+console.log(document.getElementById("main-heading"));
