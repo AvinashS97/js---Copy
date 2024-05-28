@@ -9,8 +9,11 @@
 
 // Select element using getElementById...
 
-console.log(document.getElementById("main-heading")); // it return objects.
-console.dir(document.getElementById("main-heading")); // it return objects.
+// console.log(document.getElementById("main-heading")); // it return objects.
+// console.dir(document.getElementById("main-heading")); // it return objects.
 
 //select element using query selector
-console.log(document.querySelector("#main-heading")); // it return objects. 
+// console.log(document.querySelector("#main-heading")); // it return objects. 
+
+//Chaneg Text
+const mainHeading = document.getElementById("main-Heading");
