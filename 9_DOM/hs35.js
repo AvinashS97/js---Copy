@@ -11,3 +11,6 @@
 
 console.log(document.getElementById("main-heading")); // it return objects.
 console.dir(document.getElementById("main-heading")); // it return objects.
+
+//select element using query selector
+console.log(document.querySelector("#main-heading")); // it return objects. 
