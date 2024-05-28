@@ -9,4 +9,5 @@
 
 // Select element using getElementById...
 
-console.log(document.getElementById("main-heading"));
+console.log(document.getElementById("main-heading")); // it return objects.
+console.dir(document.getElementById("main-heading")); // it return objects.
