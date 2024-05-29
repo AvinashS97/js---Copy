@@ -15,5 +15,10 @@
 //select element using query selector
 // console.log(document.querySelector("#main-heading")); // it return objects. 
 
-//Chaneg Text
-const mainHeading = document.getElementById("main-Heading");
+//Change Text (DOM MANIPULATION)
+const mainHeading = document.getElementById("main-heading");
+// console.log(mainHeading);
+document.getElementById("main-heading");
+document.getElementById("main-heading").innerHTML = "<h1> All Task </h1>"
+
+console.log(document.links);// to get all links used in Code
