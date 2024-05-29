@@ -7,6 +7,13 @@
 // console.log(window.document);
 // console.dir(document);
 
+//Finding HTML Objectss
+console.log(document.links);// to get all <area> or <a> that have href attribute.
+console.log(document.body); // return the <body> element.
+console.log(document.URL); //returns the complete URL of the document
+
+
+
 // Select element using getElementById...
 
 // console.log(document.getElementById("main-heading")); // it return objects.
@@ -20,5 +27,3 @@ const mainHeading = document.getElementById("main-heading");
 // console.log(mainHeading);
 document.getElementById("main-heading");
 document.getElementById("main-heading").innerHTML = "<h1> All Task </h1>"
-
-console.log(document.links);// to get all links used in Code
