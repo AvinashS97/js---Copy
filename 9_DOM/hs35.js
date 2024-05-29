@@ -8,9 +8,9 @@
 // console.dir(document);
 
 //Finding HTML Objectss
-console.log(document.links);// to get all <area> or <a> that have href attribute.
-console.log(document.body); // return the <body> element.
-console.log(document.URL); //returns the complete URL of the document
+// console.log(document.links);// to get all <area> or <a> that have href attribute.
+// console.log(document.body); // return the <body> element.
+// console.log(document.URL); //returns the complete URL of the document
 
 
 
@@ -23,7 +23,14 @@ console.log(document.URL); //returns the complete URL of the document
 // console.log(document.querySelector("#main-heading")); // it return objects. 
 
 //Change Text (DOM MANIPULATION)
-const mainHeading = document.getElementById("main-heading");
+// const mainHeading = document.getElementById("main-heading");
 // console.log(mainHeading);
-document.getElementById("main-heading");
-document.getElementById("main-heading").innerHTML = "<h1> All Task </h1>"
+
+// document.getElementById("main-heading");
+
+// document.getElementById("main-heading").innerHTML = "<h1> All Task </h1>"
+
+// document.getElementById("main-heading").className
+
+document.getElementById("main-heading").getAttribute("id") // get attribute
+document.getElementById("main-heading").setAttribute("class", "heading2") // setting the class/id attribute name.
