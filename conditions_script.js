@@ -70,8 +70,10 @@ else{
     syntax- condition ? exp 1 : exp 2
     (marks>10)? "exp 1":"exp 2" 
 */
+
 let p = 6;
 let q = 8;
+
 // let c = p>q? (p-q): (q-p)
 // console.log("c");
  if (p>q){

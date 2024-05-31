@@ -1,7 +1,5 @@
 //  We use let in modern JS B/C let is blocked scope but var ki globally scoped
 
-console.log("hello Avinash")
-
 var a=5; /*Declaration of variable we can't assign same fns name to let */
 var b=1;
 var c=5;
