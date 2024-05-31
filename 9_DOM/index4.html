@@ -19,5 +19,12 @@
     addlanguage("python")
     addlanguage("ReactJs")
     
+    function appOptiLanguage(language){
+        const li= document.createElement("li")
+        li.appendChild(document.createTextNode(language))
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("golang")
+    addlanguage("NodeJs")
 </script>
 </html>
