@@ -73,6 +73,11 @@ a{
 
 }
 
+.bg-dark{
+    background: #000;
+    color: #eee;
+}
+
 .form-todo{
     margin-top: 1rem ;
     min-height: 5vh;

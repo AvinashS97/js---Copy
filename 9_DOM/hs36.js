@@ -12,6 +12,17 @@ list.forEach(function(l){
     l.style.backgroundColor = "grey"
 })
 
+//Add/remove class to element with classlist
+const sectionTodo = document.querySelector(".section-todo");
+console.log(sectionTodo);
+sectionTodo.classList.add("bg-dark")
+sectionTodo.classList.remove("bg-dark")
+
+const ans= sectionTodo.classList.contains("bg-dark");
+console.log(ans)
+
+sectionTodo.classList.toggle("bg-dark");//it add the class if there is no class and removes it if there is a class.
+
 // select element using className
 
 // document.getElementById("main-heading").className // give className
