@@ -17,3 +17,7 @@ btn.addEventListener("click", () => {
   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
   document.body.style.backgroundColor = rndCol;
 });
+
+document.getElementById("ballons").addEventListener('click', function(){
+  alert("ballons clicket")
+})
