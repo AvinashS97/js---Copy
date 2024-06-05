@@ -18,6 +18,23 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = rndCol;
 });
 
-document.getElementById("ballons").addEventListener('click', function(){
-  alert("ballons clicket")
+// document.getElementById("ballons").addEventListener('click', function(e){
+//   alert("ballons clicket")
+// })
+
+document.getElementById("images").addEventListener('click', function(e){
+  console.log("Clicked inside ul list")
+},true)
+
+document.getElementById("ballons").addEventListener('click', function(e){
+  console.log("ballons clicket")
+  e.stopPropagation()
+}, true)
+
+document.getElementById('google').addEventListener('click', function(e){
+  e.preventDefault()
+  e.stopPropagation()
+  console.log("google clicked")
 })
+
+
