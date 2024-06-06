@@ -39,9 +39,15 @@ btn.addEventListener("click", () => {
 
 // task: to remove all the images present on the web page
 
-document.querySelector('#images').addEventListener('click', function(e){
-  console.log(e.target.parentNode);
-  let removeIt = e.target.parentNode
+// document.querySelector('#images').addEventListener('click', function(e){
+  // console.log(e.target.parentNode);
+  // let removeIt = e.target.parentNode
   //removeIt.remove() //1st way
-  removeIt.parentNode.removeChild(removeIt) //2nd way
-})
+  // removeIt.parentNode.removeChild(removeIt) //2nd way
+
+  if(e.target.tagName === 'IMG'){
+    console.log(e.target.id)
+    let removeIt = e.target.parentNode
+    removeIt.remove()
+  }
+// })
