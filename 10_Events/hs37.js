@@ -37,4 +37,11 @@ btn.addEventListener("click", () => {
 //   console.log("google clicked")
 // }, false)
 
-// 
+// task: to remove all the images present on the web page
+
+document.querySelector('#images').addEventListener('click', function(e){
+  console.log(e.target.parentNode);
+  let removeIt = e.target.parentNode
+  //removeIt.remove() //1st way
+  removeIt.parentNode.removeChild(removeIt) //2nd way
+})
