@@ -32,8 +32,8 @@
 // }, false)
 
 // document.getElementById('google').addEventListener('click', function(e){
-  // e.preventDefault() //prevent there default behaviour
-  // e.stopPropagation()
+// e.preventDefault() //prevent there default behaviour
+// e.stopPropagation()
 //   console.log("google clicked")
 // }, false)
 
@@ -51,6 +51,13 @@
 
 const btn = document.querySelector(".btn-headline");
 console.log(btn);
-btn.onclick =function(){
+// btn.onclick =function(){
+//   console.log("you clicked me !!!")}
+
+// function clickMe() {
+//   console.log("you clicked me !!!")
+// }
+
+btn.addEventListener('click', function () {
   console.log("you clicked me !!!")
-}
+});
