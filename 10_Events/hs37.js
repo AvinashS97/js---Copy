@@ -51,3 +51,6 @@
 
 const btn = document.querySelector(".btn-headline");
 console.log(btn);
+btn.onclick =function(){
+  console.log("you clicked me !!!")
+}
