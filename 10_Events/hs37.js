@@ -58,7 +58,13 @@ console.log(btn);
 //   console.log("you clicked me !!!")
 // }
 
-btn.addEventListener('click', function () {
-  console.log("you clicked me !!!")
-  console.log(this);
-});
+// btn.addEventListener('click', function () {
+//   console.log("you clicked me !!!")
+//   console.log(this);
+// });
+
+console.log("btn")
+const firstButton = document.querySelector("#one");
+firstButton.addEventListener("click", function(){
+  console.log("clicked btn one")
+})
