@@ -60,4 +60,5 @@ console.log(btn);
 
 btn.addEventListener('click', function () {
   console.log("you clicked me !!!")
+  console.log(this);
 });
