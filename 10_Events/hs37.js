@@ -90,3 +90,9 @@ const allButton = document.querySelectorAll(".my-buttons button");
 //     console.log(this);
 //   });
 // });
+
+//Event Object
+const firstButton = document.querySelector("#one"); 
+firstButton.addEventListener("click", function(){
+  console.log("clicked btn one")
+})
