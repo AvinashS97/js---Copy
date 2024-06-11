@@ -63,8 +63,30 @@ console.log(btn);
 //   console.log(this);
 // });
 
-console.log("btn")
-const firstButton = document.querySelector("#one");
-firstButton.addEventListener("click", function(){
-  console.log("clicked btn one")
-})
+// console.log("btn")
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function(){
+//   console.log("clicked btn one")
+// })
+
+//loop
+const allButton = document.querySelectorAll(".my-buttons button");
+// for(let button of allButton){
+//   button.addEventListener("click", function(){
+//     console.log("clicked btn ")
+//   })
+// }
+
+// for (i=0; i<allButton.length; i++){
+//   allButton[i].addEventListener("click",function(){
+//     console.log("btn")
+//     console.log(this)
+//   })
+// }
+
+// allButton.forEach(function(button){
+//   button.addEventListener("click",function(){
+//     console.log("btn");
+//     console.log(this);
+//   });
+// });
