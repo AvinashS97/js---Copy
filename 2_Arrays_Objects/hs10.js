@@ -3,20 +3,20 @@
 // Arrays are ordered collections of all data types /  elements, and each element is assigned an index starting from 0 ordered collectons of items. 
 // Array is mutable.
 
-let fruits= ["apple", "Mango", "Grapes"];
+let fruits = ["apple", "Mango", "Grapes"];
 // console.log(fruits);
 // for printing of any index value
-console.log(fruits[2]); 
+console.log(fruits[2]);
 //for chenging th evalue of any element
-fruits[2]= "banana";
+fruits[2] = "banana";
 console.log(fruits);
 // we can store any type of element in arrays.
-let mixed= [1,2,3.14, "Avinash", null, undefined]; 
+let mixed = [1, 2, 3.14, "Avinash", null, undefined];
 console.log(mixed);
 // Type of array is Objec t
 console.log(typeof fruits);
 console.log(Array.isArray(fruits)); // to check it is arrays or not
-  
+
 // Use Const for creating array
 const fru = ["apple", "mango", "grapes"];
 fru.push("banana");
