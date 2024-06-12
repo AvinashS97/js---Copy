@@ -12,7 +12,7 @@ switch (No) {
     case 2:
         console.log("No is two");
         break;
-    case 3: 
+    case 3:
         console.log("No is three");
         break;
     case 4:
