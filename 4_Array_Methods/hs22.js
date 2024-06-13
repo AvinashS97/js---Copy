@@ -29,23 +29,23 @@ console.log(students1);
 // JavaScript to illustrate forEach() method
 function func() {
 
-// Original array
-const items = [1, 29, 47];
-const copy = [];
-items.forEach(function (item) {
-    copy.push(item * item);
-});
-console.log(copy);
+    // Original array
+    const items = [1, 29, 47];
+    const copy = [];
+    items.forEach(function (item) {
+        copy.push(item * item);
+    });
+    console.log(copy);
 }
 func();
 
 // get the firstname of every users wth of forEach...
-const users =[
-    {firstName: "Avinash", age:22},
-    {firstName: "Mohit", age:20},
-    {firstName: "Sumit", age:23},
-    {firstName: "Aman", age:21},
+const users = [
+    { firstName: "Avinash", age: 22 },
+    { firstName: "Mohit", age: 20 },
+    { firstName: "Sumit", age: 23 },
+    { firstName: "Aman", age: 21 },
 ]
-users.forEach(function(user){
+users.forEach(function (user) {
     console.log(user.firstName);
 })
