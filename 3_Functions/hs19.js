@@ -1,8 +1,8 @@
 // LEXICAL SCOPE ---> inner scope have access of outer scope
 
-function outer(){
+function outer() {
     let username = "Avinash";
-    function inner(){
+    function inner() {
         console.log("inner", username);
     }
     inner()
@@ -11,25 +11,25 @@ outer()
 
 //let and const are blocked scope
 {
-    let first= "Avinash";
+    let first = "Avinash";
     console.log(first);
 }
 
 {
-const second = "Kumar";
-console.log(second);
+    const second = "Kumar";
+    console.log(second);
 }
 
 // var is function scope
 
 {
-var last = "Sharma ";
+    var last = "Sharma ";
 }
 console.log(last);
 
 
-function myData(){
-    if(true){
+function myData() {
+    if (true) {
         var firstName = "Avi"
         // console.log(firstName);
     }

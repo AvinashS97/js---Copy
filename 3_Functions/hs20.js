@@ -2,32 +2,32 @@
 //rest parameter
 //parameter Destructuring
 
-function add(a,b){
-    if(typeof b ==="undefined"){
+function add(a, b) {
+    if (typeof b === "undefined") {
         b = 1;
     }
-    return a+b;
+    return a + b;
 }
 console.log(add(4));
 //or
-function add2(x,y=0){
-    return x+y;
+function add2(x, y = 0) {
+    return x + y;
 }
 
 console.log(add2(4));
 
 //rest parameter
-function myfun(a,b,c){
+function myfun(a, b, c) {
     console.log(`a is ${a}`);
     console.log(`b is ${b}`);
     console.log(`c is ${c}`);
 }
 
-myfun(3,4,5);
+myfun(3, 4, 5);
 
 //parameter Destructuring
 
-const person ={
+const person = {
     firstN: "Avinash",
     gender: "male",
 }
@@ -38,8 +38,8 @@ const person ={
 // }
 // Details(person)
 
-function Details({firstN, gender}){
+function Details({ firstN, gender }) {
     console.log(firstN);
-    console.log(gender); 
+    console.log(gender);
 }
 Details(person)
