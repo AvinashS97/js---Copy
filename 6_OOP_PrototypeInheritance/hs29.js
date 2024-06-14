@@ -21,12 +21,14 @@
 
 const user1={
         firstname:"Avinash",
-        age: 19,}
+        age: 19,
+}
 
 const user2={
         firstname:"Sumit",
         age: 18,
-    }
+}
+
 // about.call(user2,"Singing", "ChahatFatehAliKhan")
 // about.apply(user1,["singing","ChahatFateh"]) //apply
 // const func_bind=about.bind(user1,"singing","ChahatFateh")//bind->it store in function
