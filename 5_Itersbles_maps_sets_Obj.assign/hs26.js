@@ -29,12 +29,10 @@ num.add(["item"])
 num.add(items)
 console.log(num)
 
-
 const numset = new Set([1, 2, 3, 4, 5]);
 for (let num of numset) {
     // console.log(num); // sets are iterables.
 }
-
 const myarray = [1, 2, 4, 4, 5, 6, 5, 6];
 const unique = new Set(myarray);
 console.log(unique); // convert into set without duplication of element.
