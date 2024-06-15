@@ -1,4 +1,3 @@
-
 //METHODS
 // FUNCTION INSIDE OBJECT
 // THIS KEYWORD
@@ -19,16 +18,19 @@
 function info(){
     console.log(`person name is ${this.firstName} and age is ${this.age}`);
 }
+
 const person1 = {
     firstName: "Rohit",
     age: 18,
     about: info 
 }
+
 const person2 = {
     firstName: "Avinash",
     age: 20,
     about: info
 }
+
 const person3 = {
     firstName: "Sumit",
     age: 22,
