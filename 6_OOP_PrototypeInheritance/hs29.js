@@ -74,9 +74,11 @@ let features = "height=500,width=500";
 //     win.close();
 // });
 var mywin;
+
 function openw(){
     mywin=window.open(url,'google',features);
 }
+
 function closew(){
     mywin.close();
 }
