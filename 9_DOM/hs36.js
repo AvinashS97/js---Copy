@@ -4,11 +4,11 @@
 document.querySelector("h1"); //<h1 class=​"logo">​DOM Website​</h1>​
 document.querySelector("input[type=password]"); //document.querySelector("input[type="password"]")
 
-const list=document.querySelectorAll("li")
+const list = document.querySelectorAll("li")
 
 list[0].style.color = "green"
 
-list.forEach(function(l){
+list.forEach(function (l) {
     l.style.backgroundColor = "grey"
 })
 
@@ -18,7 +18,7 @@ console.log(sectionTodo);
 sectionTodo.classList.add("bg-dark")
 sectionTodo.classList.remove("bg-dark")
 
-const ans= sectionTodo.classList.contains("bg-dark");
+const ans = sectionTodo.classList.contains("bg-dark");
 console.log(ans)
 
 sectionTodo.classList.toggle("bg-dark");//it add the class if there is no class and removes it if there is a class.
@@ -32,12 +32,12 @@ document.getElementsByClassName("heading2")
 
 //How to apply loop on HTMLCollection
 const navList = document.getElementsByClassName("nav-list")
-const myArray= Array.from(navList)
+const myArray = Array.from(navList)
 myArray // [li.nav-list, li.nav-list, li.nav-list]
 
 //applying loops
 myArray.forEach(function (li) {
-    li.style.color= "orange"
+    li.style.color = "orange"
 })
 
 

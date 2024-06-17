@@ -21,7 +21,7 @@ console.dir(document.getElementById("main-heading")); // it return objects.
 
 // document.getElementById("main-heading");
 const heading = document.getElementById("main-heading");
-heading.style.backgroundColor= "green"
+heading.style.backgroundColor = "green"
 heading.style.padding = "15px"
 heading.style.borderRadius = "10px"
 
