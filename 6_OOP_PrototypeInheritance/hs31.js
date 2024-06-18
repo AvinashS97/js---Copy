@@ -8,7 +8,7 @@
 //     this.firstname = firstname;
 //     this.age = age;
 // }
- 
+
 // cUser.prototype.about =function(){
 //     console.log(this.firstname, this.age)
 // }
@@ -22,27 +22,27 @@ function Fruit(color, taste, seeds) {
     this.taste = taste;
     this.seeds = seeds;
 }
- 
+
 // Create an object
 const fruit1 = new Fruit('Yellow', 'Sweet', 1);
- 
+
 // Display the result
 console.log(fruit1.color);
-   
+
 // GETTER AND SETTERS --->  Getters and setters are defined using the get and set keywords respectively.
 
-class person{
-    constructor(firstN, lastN, age1){
-        this.firstN =firstN;
+class person {
+    constructor(firstN, lastN, age1) {
+        this.firstN = firstN;
         this.lastN = lastN;
         this.age1 = age1;
     }
 
-    get fullname(){
+    get fullname() {
         return `${this.firstN} ${this.lastN}`
     }
-    set fullname(fullname){
-        const [firstN, lastN]=fullname.split(" ");
+    set fullname(fullname) {
+        const [firstN, lastN] = fullname.split(" ");
         this.firstN = firstN;
         this.lastN = lastN;
     }

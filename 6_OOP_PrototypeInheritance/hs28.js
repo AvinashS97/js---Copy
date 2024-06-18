@@ -15,14 +15,14 @@
 // }
 // person.about()
 
-function info(){
+function info() {
     console.log(`person name is ${this.firstName} and age is ${this.age}`);
 }
 
 const person1 = {
     firstName: "Rohit",
     age: 18,
-    about: info 
+    about: info
 }
 
 const person2 = {

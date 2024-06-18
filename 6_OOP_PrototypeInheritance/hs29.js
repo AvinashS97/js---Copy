@@ -4,29 +4,29 @@
 //     firstname:"Avinash",
 //     age: 19,
 //     about: function(){
-    //  console.log(`Name is ${this.firstname} and age is ${this.age}
+//  console.log(`Name is ${this.firstname} and age is ${this.age}
 //     }
 // }
 
 // const user2={
-    // firstname:"Sumit",
-    // age: 18,
+// firstname:"Sumit",
+// age: 18,
 // }
 // user1.about();
 // user1.about.call(user2); //call
 
 // function about(hobby,favsinger){
-    // console.log(`Name is ${this.firstname} and age is ${this.age},${hobby},${favsinger}`)
+// console.log(`Name is ${this.firstname} and age is ${this.age},${hobby},${favsinger}`)
 // }
 
-const user1={
-        firstname:"Avinash",
-        age: 19,
+const user1 = {
+    firstname: "Avinash",
+    age: 19,
 }
 
-const user2={
-        firstname:"Sumit",
-        age: 18,
+const user2 = {
+    firstname: "Sumit",
+    age: 18,
 }
 
 // about.call(user2,"Singing", "ChahatFatehAliKhan")
@@ -58,7 +58,7 @@ const user2={
 // console.log(e);
 // console.log(navigator)
 
-let url= "https://www.google.com";
+let url = "https://www.google.com";
 let features = "height=500,width=500";
 
 // let win;
@@ -75,10 +75,10 @@ let features = "height=500,width=500";
 // });
 var mywin;
 
-function openw(){
-    mywin=window.open(url,'google',features);
+function openw() {
+    mywin = window.open(url, 'google', features);
 }
 
-function closew(){
+function closew() {
     mywin.close();
 }
