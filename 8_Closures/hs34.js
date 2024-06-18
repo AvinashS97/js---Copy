@@ -18,9 +18,9 @@
 //closure give us access to an outer fns scope from an inner fns.
 //function can return functions
 
-function outerFunction(){
+function outerFunction() {
     let name1 = "Avi";
-    function innerFunction(){
+    function innerFunction() {
         // console.log("Hello i'm in inner fns.")
         console.log(name1);
     }
@@ -31,8 +31,8 @@ const ans = outerFunction();//
 // console.log(ans);
 ans();
 
-function printFName(fname, lname){
-    function printName(){
+function printFName(fname, lname) {
+    function printName() {
         console.log(fname, lname);
     }
     return printName;
