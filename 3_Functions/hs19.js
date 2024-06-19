@@ -26,8 +26,6 @@ outer()
     var last = "Sharma ";
 }
 console.log(last);
-
-
 function myData() {
     if (true) {
         var firstName = "Avi"
