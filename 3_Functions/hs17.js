@@ -28,7 +28,6 @@ function firstchar(anystring) {
 console.log(firstchar("Avinash"));
 
 //find the number in array
-
 function findTarget(array, target) {
   for (i = 0; i < array.length; i++) {
     if (array[i] === target) {
