@@ -6,6 +6,7 @@
 function fns2() {
     console.log("inside fns2")
 }
+
 function fns1(callback) {
     console.log("hello i'm fns1...");
     (callback);
