@@ -72,9 +72,12 @@ firstButton.addEventListener("click", function(){
 
 //loop
 const allButton = document.querySelectorAll(".my-buttons button");
+
 for(let button of allButton){
   button.addEventListener("click", function(){
-    console.log("clicked btn ")
+    console.log(this);
+    console.log(this.textContent);
+    console.log("clicked btn ");
   })
 }
 
