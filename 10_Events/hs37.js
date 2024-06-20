@@ -1,4 +1,7 @@
-// Events are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
+//DOM Events
+//Event Object
+
+// Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
 
 // For example:
 // The user selects, clicks, or hovers the cursor over a certain element.
@@ -10,14 +13,20 @@
 
 // const btn = document.querySelector("button");
 
+// 1.Random Number Generator
+
 // function random(number) {
 //   return Math.floor(Math.random() * (number + 1));
 // }
+
+// 2.Background Changer
 
 // btn.addEventListener("click", () => {
 //   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
 //   document.body.style.backgroundColor = rndCol;
 // });
+
+// 3. Apply perticular action on different elements
 
 // document.getElementById("ballons").addEventListener('click', function(e){
 //   alert("ballons clicket")
@@ -73,29 +82,34 @@ firstButton.addEventListener("click", function(){
 //loop
 const allButton = document.querySelectorAll(".my-buttons button");
 
-for(let button of allButton){
-  button.addEventListener("click", function(){
-    console.log(this);
-    console.log(this.textContent);
-    console.log("clicked btn ");
-  })
-}
-
-// for (i=0; i<allButton.length; i++){
-//   allButton[i].addEventListener("click",function(){
-//     console.log("btn")
-//     console.log(this)
+// for(let button of allButton){
+//   button.addEventListener("click", function(){
+//     console.log(this);
+//     console.log(this.textContent);
+//     console.log("clicked btn ");
 //   })
 // }
 
+//OR
+
+// for (i=0; i<allButton.length; i++){
+//   allButton[i].addEventListener("click",function(){
+//     console.log("btn with for Loop");
+//     console.log(this);
+//   })
+// }
+
+//OR
+
 // allButton.forEach(function(button){
 //   button.addEventListener("click",function(){
-//     console.log("btn");
+//     console.log("btn with forEach");
 //     console.log(this);
 //   });
 // });
 
-//Event Object
+//Event Object ( 28:00 min )
+
 // const firstButton = document.querySelector("#one");
 // firstButton.addEventListener("click", function () {
 //   console.log("clicked btn one")
