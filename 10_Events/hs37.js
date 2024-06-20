@@ -50,7 +50,7 @@
 //   }
 // })
 
-const btn = document.querySelector(".btn-headline");
+const btn = document.querySelector(".btn-headline"); //for hs_10-index.html
 console.log(btn);
 // btn.onclick =function(){
 //   console.log("you clicked me !!!")}
@@ -65,18 +65,18 @@ console.log(btn);
 // });
 
 // console.log("btn")
-// const firstButton = document.querySelector("#one");
-// firstButton.addEventListener("click", function(){
-//   console.log("clicked btn one")
-// })
+const firstButton = document.querySelector("#one");
+firstButton.addEventListener("click", function(){
+  // console.log("clicked btn one")
+})
 
 //loop
 const allButton = document.querySelectorAll(".my-buttons button");
-// for(let button of allButton){
-//   button.addEventListener("click", function(){
-//     console.log("clicked btn ")
-//   })
-// }
+for(let button of allButton){
+  button.addEventListener("click", function(){
+    console.log("clicked btn ")
+  })
+}
 
 // for (i=0; i<allButton.length; i++){
 //   allButton[i].addEventListener("click",function(){
@@ -93,7 +93,7 @@ const allButton = document.querySelectorAll(".my-buttons button");
 // });
 
 //Event Object
-const firstButton = document.querySelector("#one");
-firstButton.addEventListener("click", function () {
-  console.log("clicked btn one")
-})
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function () {
+//   console.log("clicked btn one")
+// })
