@@ -109,7 +109,6 @@ const allButton = document.querySelectorAll(".my-buttons button");
 // });
 
 //Event Object ( 28:00 min )
-
 // const firstButton = document.querySelector("#one");
 // firstButton.addEventListener("click", function () {
 //   console.log("clicked btn one")
