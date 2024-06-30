@@ -54,9 +54,26 @@ const allButton = document.querySelectorAll(".my-buttons button");
 
 //Event Object ( 28:00 min )
 
-const firstButton = document.querySelector("#one");
-firstButton.addEventListener("click", function (abc) {
-  console.log(abc); // On performing any events js engine will provide all info. in Object form by using arguments like 'abc' relate to it...
-  console.log("clicked btn one"); 
-  console.log(this);
-})
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function (e) {
+//   console.log(e); // On performing any events js engine will provide all info. in Object form by using arguments like 'e' relate to it...
+//   console.log("clicked btn one"); 
+//   console.log(this);
+// })
+
+// for(let button of allButton){
+//   button.addEventListener("click", function(e){
+    // console.log(e.currentTarget);
+    // console.log(this.textContent);
+    // console.log("clicked btn ");
+//   })
+// }
+
+
+allButton.forEach(function(button){
+    button.addEventListener("click",(e)=>{
+        console.log(e.currentTarget.textContent);
+        // console.log("btn with forEach");
+        // console.log(this);
+    });
+});
