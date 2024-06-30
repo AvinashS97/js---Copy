@@ -58,3 +58,61 @@
 //     // removeIt.parentNode.removeChild(removeIt) //2nd way
 //   }
 // })
+<<<<<<< HEAD:10_Events/hs37_1.js
+=======
+
+const btn = document.querySelector(".btn-headline"); //for hs_10-index.html
+console.log(btn);
+// btn.onclick =function(){
+//   console.log("you clicked me !!!")}
+
+// function clickMe() {
+//   console.log("you clicked me !!!")
+// }
+
+// btn.addEventListener('click', function () {
+//   console.log("you clicked me !!!")
+//   console.log(this);
+// });
+
+// console.log("btn")
+const firstButton = document.querySelector("#one");
+firstButton.addEventListener("click", function(){
+  // console.log("clicked btn one")
+})
+
+//loop
+const allButton = document.querySelectorAll(".my-buttons button");
+
+// for(let button of allButton){
+//   button.addEventListener("click", function(){
+//     console.log(this);
+//     console.log(this.textContent);
+//     console.log("clicked btn ");
+//   })
+// }
+
+//OR
+
+// for (i=0; i<allButton.length; i++){
+//   allButton[i].addEventListener("click",function(){
+//     console.log("btn with for Loop");
+//     console.log(this);
+//   })
+// }
+
+//OR
+
+// allButton.forEach(function(button){
+//   button.addEventListener("click",function(){
+//     console.log("btn with forEach");
+//     console.log(this);
+//   });
+// });
+
+//Event Object ( 28:00 min )
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function () {
+//   console.log("clicked btn one")
+// })
+>>>>>>> 492a15c9a283a11398f8fa202df44c8a93c78925:10_Events/hs37.js
