@@ -71,11 +71,20 @@ const btn = document.querySelector(".btn-headline"); //for hs_10-index.html
 
 const allButton = document.querySelectorAll(".my-buttons button");
 
-allButton.forEach(function(button){
-    button.addEventListener("click",(e)=>{
-        console.log(e.currentTarget.textContent);
+// allButton.forEach(function(button){
+//     button.addEventListener("click",(e)=>{
+//         console.log(e.currentTarget.textContent);
         // console.log("btn with forEach");
         // console.log(this);
+    // });
+// });
+
+allButton.forEach(function(button){
+    button.addEventListener("click",(e)=>{
+        console.log(e.currentTarget);
+        e.target.style.backgroundColor ="yellow";
+        // e.target.style.color="black";
     });
 });
+
  
