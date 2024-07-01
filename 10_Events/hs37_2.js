@@ -24,7 +24,7 @@ const btn = document.querySelector(".btn-headline"); //for hs_10-index.html
 
 //loop
 
-const allButton = document.querySelectorAll(".my-buttons button");
+// const allButton = document.querySelectorAll(".my-buttons button");
 
 // for(let button of allButton){
 //   button.addEventListener("click", function(){
@@ -69,6 +69,7 @@ const allButton = document.querySelectorAll(".my-buttons button");
 //   })
 // }
 
+const allButton = document.querySelectorAll(".my-buttons button");
 
 allButton.forEach(function(button){
     button.addEventListener("click",(e)=>{
@@ -77,3 +78,4 @@ allButton.forEach(function(button){
         // console.log(this);
     });
 });
+ 
