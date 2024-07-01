@@ -11,7 +11,7 @@
 // // clientX, clientY, screenX, screenY
 // // altKey, ctrlKey, shiftKey, keyCode 
 
-// const btn = document.querySelector("button");
+const btn = document.querySelector("button");
 
 // // 1. ******* Random Number Generator *******
 
@@ -21,10 +21,11 @@
 
 // // 2. ******* Background Changer *******
 
-// btn.addEventListener("click", () => {
-//   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-//   document.body.style.backgroundColor = rndCol;
-// });
+button.addEventListener("click", () => {
+console.log("button clicked");
+  const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
 
 // // 3. ******* Apply perticular action on different elements *******
 
