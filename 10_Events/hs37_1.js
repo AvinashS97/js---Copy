@@ -15,14 +15,14 @@ const btn = document.querySelector("button");
 
 // // 1. ******* Random Number Generator *******
 
-// function random(number) {
-//   return Math.floor(Math.random() * (number + 1));
-// }
+function random(number) {
+  return Math.floor(Math.random() * (number + 1));
+}
 
 // // 2. ******* Background Changer *******
 
-button.addEventListener("click", () => {
-console.log("button clicked");
+btn.addEventListener("click", () => {
+  // console.log("button clicked");
   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
   document.body.style.backgroundColor = rndCol;
 });
