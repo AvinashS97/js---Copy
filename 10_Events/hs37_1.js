@@ -4,18 +4,19 @@
 //for hs_10-index.html
 
 const btn = document.querySelector(".btn-headline");
+
 // console.log(btn);
 // btn.onclick =function(){
 //   console.log("you clicked me !!!")}
 
-function clickMe() {
-  console.log("you clicked me... !!!")
-}
+// function clickMe() {
+//   console.log("you clicked me... !!!")
+// }
 
-btn.addEventListener('click', function () {
-  console.log("you clicked me !!!")
-  console.log(this); // <button class="btn btn-headline">Learn More</button>
-});
+// btn.addEventListener('click', function () {
+//   console.log("you clicked me !!!")
+//   console.log(this); // <button class="btn btn-headline">Learn More</button>
+// });
 
 
 
