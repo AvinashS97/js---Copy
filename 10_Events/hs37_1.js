@@ -1,61 +1,98 @@
-// //DOM Events
+//Event Object
+// Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
 
+//for hs_10-index.html
 
-// // Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
+const btn = document.querySelector(".btn-headline");
+// console.log(btn);
+// btn.onclick =function(){
+//   console.log("you clicked me !!!")}
 
-// // For example:
-// // The user selects, clicks, or hovers the cursor over a certain element.
-// // The user chooses a key on the keyboard.
-// // type, timestamp, dafaultPrevented
-// // target, toelement, srcElement, currentTarget
-// // clientX, clientY, screenX, screenY
-// // altKey, ctrlKey, shiftKey, keyCode 
-
-const btn = document.querySelector("button");
-
-// // 1. ******* Random Number Generator *******
-
-function random(number) {
-  return Math.floor(Math.random() * (number + 1));
+function clickMe() {
+  console.log("you clicked me... !!!")
 }
 
-// // 2. ******* Background Changer *******
-
-btn.addEventListener("click", () => {
-  // console.log("button clicked");
-  const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-  document.body.style.backgroundColor = rndCol;
+btn.addEventListener('click', function () {
+  console.log("you clicked me !!!")
+  console.log(this); // <button class="btn btn-headline">Learn More</button>
 });
 
-// // 3. ******* Apply perticular action on different elements *******
 
-// document.getElementById("ballons").addEventListener('click', function(e){
-//   alert("ballons clicket")
+
+///// ******* for 10_index.html file ******* /////
+
+// console.log("btn")
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function(){
+  // console.log("clicked btn one")
 // })
 
-// document.getElementById("images").addEventListener('click', function(e){
-//   console.log("Clicked inside ul list")
-// },false)
+//loop
 
-// document.getElementById("ballons").addEventListener('click', function(e){
-//   console.log("ballons clicket")
-//   e.stopPropagation() // stop bubbling propagation 
-// }, false)
+// const allButton = document.querySelectorAll(".my-buttons button");
 
-// document.getElementById('google').addEventListener('click', function(e){
-// e.preventDefault() //prevent there default behaviour
-// e.stopPropagation()
-//   console.log("google clicked")
-// }, false)
+// for(let button of allButton){
+//   button.addEventListener("click", function(){
+//     console.log(this);
+//     console.log(this.textContent);
+//     console.log("clicked btn ");
+//   })
+// }
 
-// // ******* task: to remove all the images present on the web page *******
+//OR
 
-// document.querySelector('#images').addEventListener('click', function(e){
-//   console.log(e.target.parentNode);
-//   if(e.target.tagName === 'IMG'){
-//     console.log(e.target.id)
-//     let removeIt = e.target.parentNode
-//     removeIt.remove()
-     // removeIt.parentNode.removeChild(removeIt) //2nd way
-//   }
+// for (i=0; i<allButton.length; i++){
+//   allButton[i].addEventListener("click",function(){
+//     console.log("btn with for Loop");
+//     console.log(this);
+//   })
+// }
+
+//OR
+
+// allButton.forEach(function(button){
+//   button.addEventListener("click",function(){
+//     console.log("btn with forEach");
+//     console.log(this);
+//   });
+// });
+
+//Event Object ( 28:00 min )
+
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function (e) {
+//   console.log(e); // On performing any events js engine will provide all info. in Object form by using arguments like 'e' relate to it...
+//   console.log("clicked btn one"); 
+//   console.log(this);
 // })
+
+// for(let button of allButton){
+//   button.addEventListener("click", function(e){
+    // console.log(e.currentTarget);
+    // console.log(this.textContent);
+    // console.log("clicked btn ");
+//   })
+// }
+
+const allButton = document.querySelectorAll(".my-buttons button");
+
+// allButton.forEach(function(button){
+//     button.addEventListener("click",(e)=>{
+//         console.log(e.currentTarget.textContent);
+        // console.log("btn with forEach");
+        // console.log(this);
+    // });
+// });
+
+allButton.forEach(function(button){
+    button.addEventListener("click",(e)=>{
+        console.log(e.currentTarget);
+        e.target.style.backgroundColor ="yellow";
+        // e.target.style.color="black";
+    });
+});
+
+// 01:02:00
+
+
+ 
