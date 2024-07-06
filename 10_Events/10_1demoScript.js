@@ -1,5 +1,7 @@
 const mainbutton = document.querySelector("button");
 const body= document.body;
+const currentcolor = document.querySelector(".current-color")
+// console.log(currentcolor)
 
 function random() {
     const red = Math.floor(Math.random() *256);
@@ -15,6 +17,7 @@ mainbutton.addEventListener("click",()=>{
     const rndCol = random();
     // console.log(rndCol)
     body.style.backgroundColor = rndCol;
+    currentcolor.textContent = rndCol // set the value of rndcol = currentcolor text content... 
 });
 
 /////// ***** 01:15:18 ***** ///////

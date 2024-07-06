@@ -1,7 +1,7 @@
 //Event Object
 // Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
 
-//for hs_10-index.html
+console.log("for hs_10-index.html")// *************
 
 const btn = document.querySelector(".btn-headline");
 
@@ -20,7 +20,7 @@ const btn = document.querySelector(".btn-headline");
 
 
 
-///// ******* for 10_index.html file ******* /////
+console.log("for 10_index.html file") //********
 
 // console.log("btn")
 // const firstButton = document.querySelector("#one");
@@ -92,8 +92,4 @@ allButton.forEach(function(button){
         // e.target.style.color="black";
     });
 });
-
 // 01:02:00
-
-
- 
