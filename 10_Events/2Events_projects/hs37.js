@@ -28,30 +28,30 @@ btn.addEventListener("click", () => {
 
 // // 3. ******* Apply perticular action on different elements *******
 
-document.getElementById("ballons").addEventListener('click', function(e){
+document.getElementById("ballons").addEventListener('click', function (e) {
   alert("ballons clicket")
 })
 
-document.getElementById("images").addEventListener('click', function(e){
+document.getElementById("images").addEventListener('click', function (e) {
   console.log("Clicked inside ul list")
-},false)
+}, false)
 
-document.getElementById("ballons").addEventListener('click', function(e){
+document.getElementById("ballons").addEventListener('click', function (e) {
   console.log("ballons clicket")
   e.stopPropagation() // stop bubbling propagation 
 }, false)
 
-document.getElementById('google').addEventListener('click', function(e){
-e.preventDefault() //prevent there default behaviour
-e.stopPropagation()
+document.getElementById('google').addEventListener('click', function (e) {
+  e.preventDefault() //prevent there default behaviour
+  e.stopPropagation()
   console.log("google clicked")
 }, false)
 
 // // ******* task: to remove all the images present on the web page *******
 
-document.querySelector('#images').addEventListener('click', function(e){
+document.querySelector('#images').addEventListener('click', function (e) {
   console.log(e.target.parentNode);
-  if(e.target.tagName === 'IMG'){
+  if (e.target.tagName === 'IMG') {
     console.log(e.target.id)
     let removeIt = e.target.parentNode
     removeIt.remove()
