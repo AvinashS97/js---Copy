@@ -1,6 +1,9 @@
 //Event Object
 // Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
 
+// Keypress Event
+// Mouseover Event
+
 console.log("for hs_10-index.html")// *************
 
 const btn = document.querySelector(".btn-headline");
@@ -94,8 +97,16 @@ allButton.forEach(function(button){
 });
 
 // Keypress Event
-// Mouseover Event
+
 const body = document.body;
 body.addEventListener("keypress",(e)=>{
     console.log(e.key);
+})
+
+// Mouseover Event
+const learnMoreButton= document.querySelector(".btn-headline");
+// console.log(learnMoreButton)
+learnMoreButton.addEventListener("mouseover",(e)=>{
+    // console.log(e)
+    console.log("mouse Over event occured..." )
 })
