@@ -28,7 +28,7 @@ console.log("for 10_index.html file") //********
 // console.log("btn")
 // const firstButton = document.querySelector("#one");
 // firstButton.addEventListener("click", function(){
-  // console.log("clicked btn one")
+// console.log("clicked btn one")
 // })
 
 //loop
@@ -72,9 +72,9 @@ console.log("for 10_index.html file") //********
 
 // for(let button of allButton){
 //   button.addEventListener("click", function(e){
-    // console.log(e.currentTarget);
-    // console.log(this.textContent);
-    // console.log("clicked btn ");
+// console.log(e.currentTarget);
+// console.log(this.textContent);
+// console.log("clicked btn ");
 //   })
 // }
 
@@ -83,15 +83,15 @@ const allButton = document.querySelectorAll(".my-buttons button");
 // allButton.forEach(function(button){
 //     button.addEventListener("click",(e)=>{
 //         console.log(e.currentTarget.textContent);
-        // console.log("btn with forEach");
-        // console.log(this);
-    // });
+// console.log("btn with forEach");
+// console.log(this);
+// });
 // });
 
-allButton.forEach(function(button){
-    button.addEventListener("click",(e)=>{
+allButton.forEach(function (button) {
+    button.addEventListener("click", (e) => {
         console.log(e.currentTarget);
-        e.target.style.backgroundColor ="yellow";
+        e.target.style.backgroundColor = "yellow";
         // e.target.style.color="black";
     });
 });
@@ -99,14 +99,14 @@ allButton.forEach(function(button){
 // Keypress Event
 
 const body = document.body;
-body.addEventListener("keypress",(e)=>{
+body.addEventListener("keypress", (e) => {
     console.log(e.key);
 })
 
 // Mouseover Event
-const learnMoreButton= document.querySelector(".btn-headline");
+const learnMoreButton = document.querySelector(".btn-headline");
 // console.log(learnMoreButton)
-learnMoreButton.addEventListener("mouseover",(e)=>{
+learnMoreButton.addEventListener("mouseover", (e) => {
     // console.log(e)
-    console.log("mouse Over event occured..." )
+    console.log("mouse Over event occured...")
 })
