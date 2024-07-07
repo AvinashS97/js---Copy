@@ -92,4 +92,10 @@ allButton.forEach(function(button){
         // e.target.style.color="black";
     });
 });
-// 01:02:00
+
+// Keypress Event
+// Mouseover Event
+const body = document.body;
+body.addEventListener("keypress",(e)=>{
+    console.log(e.key);
+})
