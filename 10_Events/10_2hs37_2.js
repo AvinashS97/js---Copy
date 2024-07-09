@@ -3,8 +3,9 @@
 
 // Keypress Event
 // Mouseover Event
+// Mouseleave Event
 
-console.log("for hs_10-index.html")// *************
+console.log("for 10_2hs_index.html")// *************
 
 const btn = document.querySelector(".btn-headline");
 
@@ -23,7 +24,7 @@ const btn = document.querySelector(".btn-headline");
 
 
 
-console.log("for 10_index.html file") //********
+console.log("for button-1,2,3") //********
 
 // console.log("btn")
 // const firstButton = document.querySelector("#one");
@@ -110,3 +111,7 @@ learnMoreButton.addEventListener("mouseover", (e) => {
     // console.log(e)
     console.log("mouse Over event occured...")
 })
+learnMoreButton.addEventListener("mouseleave", (e) => {
+    // console.log(e)
+    console.log("mouse leave event occured...")
+})  
