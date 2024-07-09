@@ -19,5 +19,3 @@ mainbutton.addEventListener("click", () => {
     body.style.backgroundColor = rndCol;
     currentcolor.textContent = rndCol // set the value of rndcol = currentcolor text content... 
 });
-
-/////// ***** 01:15:18 ***** ///////

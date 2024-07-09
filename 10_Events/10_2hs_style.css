@@ -99,7 +99,6 @@ a {
     width: 20%;
     height: 2.6vh;
     background: #808080;
-    ;
     color: white;
     font-weight: bold;
 }
@@ -149,7 +148,7 @@ a {
     border-radius: 3px;
 }
 
-.my-buttons{
+.my-buttons {
     margin-top: 1rem;
     padding: 1rem 2rem;
 }
