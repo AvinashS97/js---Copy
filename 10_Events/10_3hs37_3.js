@@ -1,3 +1,3 @@
-// Event Bubling/Event Propagation
+// Event Bubling or Event Propagation
 // Event Capturing
 // Event Delegation
