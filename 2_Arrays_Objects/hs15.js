@@ -1,4 +1,4 @@
-//Objects ---> Objects store key value pairs, It is reerence type, Objects don't have index
+//Objects ---> Objects store key value pairs, It is reference type, Objects don't have index
 // How to create Objects
 const person = {
     name: "Avinash",
