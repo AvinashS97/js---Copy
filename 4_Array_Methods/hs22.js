@@ -25,13 +25,14 @@ function myFunction(item1, index, arr) {
 
 console.log(students1);
 
-//the method forEach() calculates the square of every element of the array.
+// Use the method forEach() loop to calculates the square of every element of the array.
 // JavaScript to illustrate forEach() method
 function func() {
 
     // Original array
     const items = [1, 29, 47];
     const copy = [];
+
     items.forEach(function (item) {
         copy.push(item * item);
     });
@@ -39,7 +40,7 @@ function func() {
 }
 func();
 
-// get the firstname of every users wth of forEach...
+// get the firstname of every users with forEach loop... 
 const users = [
     { firstName: "Avinash", age: 22 },
     { firstName: "Mohit", age: 20 },
@@ -49,3 +50,5 @@ const users = [
 users.forEach(function (user) {
     console.log(user.firstName);
 })
+
+

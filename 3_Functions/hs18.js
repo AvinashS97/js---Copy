@@ -3,6 +3,7 @@
 // FUNCTION INSIDE FNS
 
 //ARRAY FUNCTION
+
 const sum = (num1, num2, num3) => {
   return num1 + num2 + num3;
 }
@@ -18,6 +19,7 @@ const iseven = number =>
 console.log(iseven(2));
 
 // HOISTING---> Declaration are moved to the top of functions scope during execution.
+
 hello();
 function hello() {
   console.log("hello World");
