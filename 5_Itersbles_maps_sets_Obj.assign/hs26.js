@@ -1,9 +1,9 @@
-// ITERABLES
-// SETS
+//! ITERABLES
+//! SETS
 
 
 // ITERABLES ---> the data structure that have the symbol.iterator() method.
-//Ex:- Array,Strings, Set etc are iterables. 
+//Ex:- Array,Strings, Set etc are iterables. //!Objects are not
 
 const firstname = "Avinash";
 for (let char of firstname) {

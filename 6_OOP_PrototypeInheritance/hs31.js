@@ -1,8 +1,9 @@
-// NEW KEYWORD
-// GETTER AND SETTERS
+//! NEW KEYWORD
+//! GETTER AND SETTERS
 
-// NEW KEYWORD ---> It create empty object with this , return this and it bind the prpt that is declared in thus keyword to the new object.
-//  Syntax: constructorFunction(arguments);
+
+//! NEW KEYWORD ---> It create empty object with this , return this and it bind the prpt that is declared in thus keyword to the new object.
+//*  Syntax: constructorFunction(arguments);
 
 // function cUser(firstname, age){
 //     this.firstname = firstname;
@@ -23,13 +24,13 @@ function Fruit(color, taste, seeds) {
     this.seeds = seeds;
 }
 
-// Create an object
+//* Create an object
 const fruit1 = new Fruit('Yellow', 'Sweet', 1);
 
-// Display the result
+//* Display the result
 console.log(fruit1.color);
 
-// GETTER AND SETTERS --->  Getters and setters are defined using the get and set keywords respectively.
+//! GETTER AND SETTERS --->  Getters and setters are defined using the get and set keywords respectively.
 
 class person {
     constructor(firstN, lastN, age1) {

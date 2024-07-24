@@ -1,4 +1,4 @@
-//[[PROTOTYPE]] ---> __proto__ is the reference of object/fns...
+//! [[PROTOTYPE]] ---> __proto__ is the reference of object/fns...
 
 const student1 = {
     id1: 'avinash',
@@ -12,7 +12,7 @@ console.log(student1);
 console.log(student2);
 
 
-//Example to add a new prpty to the object
+//*Example to add a new prpty to the object
 
 function Student(a, b) {
     this.name = a;

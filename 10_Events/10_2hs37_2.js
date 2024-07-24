@@ -1,9 +1,9 @@
-//Event Object
-// Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
+//! Event Object
+//* Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
 
-// Keypress Event
-// Mouseover Event
-// Mouseleave Event
+//* Keypress Event
+//* Mouseover Event
+//* Mouseleave Event
 
 console.log("for 10_2hs_index.html")// *************
 
@@ -32,7 +32,7 @@ console.log("for button-1,2,3") //********
 // console.log("clicked btn one")
 // })
 
-//loop
+//*loop
 
 // const allButton = document.querySelectorAll(".my-buttons button");
 
@@ -44,7 +44,7 @@ console.log("for button-1,2,3") //********
 //   })
 // }
 
-//OR
+//* OR
 
 // for (i=0; i<allButton.length; i++){
 //   allButton[i].addEventListener("click",function(){
@@ -53,7 +53,7 @@ console.log("for button-1,2,3") //********
 //   })
 // }
 
-//OR
+//* OR
 
 // allButton.forEach(function(button){
 //   button.addEventListener("click",function(){
@@ -62,7 +62,7 @@ console.log("for button-1,2,3") //********
 //   });
 // });
 
-//Event Object ( 28:00 min )
+//* Event Object ( 28:00 min )
 
 // const firstButton = document.querySelector("#one");
 // firstButton.addEventListener("click", function (e) {
@@ -97,14 +97,15 @@ allButton.forEach(function (button) {
     });
 });
 
-// Keypress Event
+//* Keypress Event
 
 const body = document.body;
 body.addEventListener("keypress", (e) => {
     console.log(e.key);
 })
 
-// Mouseover Event
+//* Mouseover Event
+
 const learnMoreButton = document.querySelector(".btn-headline");
 // console.log(learnMoreButton)
 learnMoreButton.addEventListener("mouseover", (e) => {
