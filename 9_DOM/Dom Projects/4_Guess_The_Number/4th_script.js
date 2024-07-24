@@ -10,8 +10,8 @@ const startOver = document.querySelector('.resultParas');
 
 const p = document.createElement('p');
 
-let prevGuess = []; // it store previous guesses
-let numGuess = 1; // number of attempt guesses
+let prevGuess = []; //* it store previous guesses
+let numGuess = 1; //* number of attempt guesses
 
 let playGame = true;  
 
@@ -24,7 +24,7 @@ if (playGame) {
     });
 }
 
-function validateGuess(guess) { // it validate guesses
+function validateGuess(guess) { //* it validate guesses
     if (isNaN(guess)) {
         alert('PLease enter a valid number');
     } else if (guess < 1) {
@@ -44,7 +44,7 @@ function validateGuess(guess) { // it validate guesses
     }
 }
 
-function checkGuess(guess) { //check and print guess that is low or high or same...
+function checkGuess(guess) { //* check and print guess that is low or high or same...
     if (guess === randomNumber) {
         displayMessage(`You guessed it right`);
         endGame();
@@ -58,8 +58,8 @@ function checkGuess(guess) { //check and print guess that is low or high or same
 function displayGuess(guess) {
     userInput.value = '';
     guessSlot.innerHTML += `${guess}, `;
-    numGuess++; //store guesses value
-    remaining.innerHTML = `${11 - numGuess} `; // it dec. the no. of attempt guess
+    numGuess++; //* store guesses value
+    remaining.innerHTML = `${11 - numGuess} `; //* it dec. the no. of attempt guess
 }
 
 function displayMessage(message) {
@@ -68,7 +68,7 @@ function displayMessage(message) {
 
 function endGame() {
     userInput.value = '';
-    userInput.setAttribute('disabled', ''); //after end game disable the input.
+    userInput.setAttribute('disabled', ''); //* after end game disable the input.
     p.classList.add('button');
     p.innerHTML = `<h2 id="newGame"> Start new Game </h2>`;
     startOver.appendChild(p);
