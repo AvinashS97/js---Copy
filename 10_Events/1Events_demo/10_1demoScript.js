@@ -10,12 +10,12 @@ function random() {
     const rndCol = `rgb(${red}, ${green}, ${blue})`
     return rndCol
 }
-// math.random() help to generate  random number for colors...
+//* math.random() help to generate  random number for colors...
 
 mainbutton.addEventListener("click", () => {
     // console.log("button clicked")
     const rndCol = random();
     // console.log(rndCol)
     body.style.backgroundColor = rndCol;
-    currentcolor.textContent = rndCol // set the value of rndcol = currentcolor text content... 
+    currentcolor.textContent = rndCol //* set the value of rndcol = currentcolor text content... 
 });
