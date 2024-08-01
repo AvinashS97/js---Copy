@@ -101,10 +101,11 @@ allButton.forEach(function (button) {
 
 const body = document.body;
 body.addEventListener("keypress", (e) => {
+    console.log(e); //* Give the pressed key 
     console.log(e.key);
 })
 
-//* Mouseover Event
+//* Mouseover / Mouseleave Event (01:18:00)
 
 const learnMoreButton = document.querySelector(".btn-headline");
 // console.log(learnMoreButton)

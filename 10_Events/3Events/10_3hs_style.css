@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:  1px solid red;
+    box-sizing: border-box;
+    /* background-color: grey; */
+}
+
+main{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    min-height: 100px;
+    min-width: 100px;
+    padding: 5rem;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.grandparent{
+    background: #658db3;
+    ;
+}
+
+.parent{
+    background: #145da0;
+}
+
+.child{
+    background: #1c3243;
+}
