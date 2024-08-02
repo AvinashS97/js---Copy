@@ -5,7 +5,7 @@
 //* Mouseover Event
 //* Mouseleave Event
 
-console.log("for 10_2hs_index.html")// *************
+console.log("for 10_2hs_index.html")//! *************
 
 const btn = document.querySelector(".btn-headline");
 
@@ -24,7 +24,7 @@ const btn = document.querySelector(".btn-headline");
 
 
 
-console.log("for button-1,2,3") //********
+console.log("for button-1,2,3") //! ********
 
 // console.log("btn")
 // const firstButton = document.querySelector("#one");

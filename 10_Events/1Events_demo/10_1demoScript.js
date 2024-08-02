@@ -10,6 +10,7 @@ function random() {
     const rndCol = `rgb(${red}, ${green}, ${blue})`
     return rndCol
 }
+
 //* math.random() help to generate  random number for colors...
 
 mainbutton.addEventListener("click", () => {

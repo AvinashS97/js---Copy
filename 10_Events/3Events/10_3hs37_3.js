@@ -10,18 +10,18 @@ const child = document.querySelector(".child");
 
 //** Event Bubling or Event Propagation */
 
-// child.addEventListener("click", ()=>{
-//     console.log("You Clicked Child")
-// })
-// parent.addEventListener("click", ()=>{
-//     console.log("You Clicked Parent")
-// })
-// grandparent.addEventListener("click", ()=>{
-//     console.log("You Clicked Grandparent")
-// })
-// document.body.addEventListener("click", ()=>{
-//     console.log("You clicked Body")
-// })
+child.addEventListener("click", ()=>{
+    console.log("You Clicked Child")
+})
+parent.addEventListener("click", ()=>{
+    console.log("You Clicked Parent")
+})
+grandparent.addEventListener("click", ()=>{
+    console.log("You Clicked Grandparent")
+})
+document.body.addEventListener("click", ()=>{
+    console.log("You clicked Body")
+})
 
 //** Capturing Event */ (=== 01:33:10 ===)
 
@@ -33,7 +33,7 @@ parent.addEventListener("click", () => {
 }, false)
 grandparent.addEventListener("click", () => {
     console.log("Captured !!! Grandparent")
-}, true)
+}, false)
 document.body.addEventListener("click", () => {
     console.log("Captured !!! Body")
 }, false)
