@@ -25,15 +25,15 @@ const child = document.querySelector(".child");
 
 //** Capturing Event */ (=== 01:33:10 ===)
 
-child.addEventListener("click", ()=>{
+child.addEventListener("click", () => {
     console.log("Captured !!! Child")
-},false)
-parent.addEventListener("click", ()=>{
+}, false)
+parent.addEventListener("click", () => {
     console.log("Captured !!! Parent")
-},false)
-grandparent.addEventListener("click", ()=>{
+}, false)
+grandparent.addEventListener("click", () => {
     console.log("Captured !!! Grandparent")
-},true)
-document.body.addEventListener("click", ()=>{
+}, true)
+document.body.addEventListener("click", () => {
     console.log("Captured !!! Body")
-},false)
+}, false)

@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    border:  1px solid red;
+    border: 1px solid red;
     box-sizing: border-box;
     /* background-color: grey; */
 }
 
-main{
-    display:  flex;
+main {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.box{
+.box {
     min-height: 100px;
     min-width: 100px;
     padding: 5rem;
@@ -22,15 +22,14 @@ main{
     color: white;
 }
 
-.grandparent{
+.grandparent {
     background: #658db3;
-    ;
 }
 
-.parent{
+.parent {
     background: #145da0;
 }
 
-.child{
+.child {
     background: #1c3243;
 }
