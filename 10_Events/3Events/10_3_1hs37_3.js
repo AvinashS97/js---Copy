@@ -3,6 +3,7 @@
 const todoForm = document.querySelector(".form-todo");
 const todoInput = document.querySelector(".form-todo input[type='text']");
 const todoList = document.querySelector(".todo_list");
+
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault(); //* It prevent to reload the page
     // const newTodoText = console.log(todoInput.value); //* Print the input value
@@ -16,17 +17,18 @@ todoForm.addEventListener("submit", (e) => {
         </div>`;
     newLi.innerHTML = newLiInnerHtml;
     todoList.append(newLi);
-    // console.log(newLi)
     todoInput.value = "";
 });
 
 todoList.addEventListener("click", (e)=>{
     if(e.target.classList.contains("remove")){
-        console.log("You want to remove something ???")
+        const targetedLi = e.target.parentNode.parentNode;
+        targetedLi.remove();
     };
     if(e.target.classList.contains("done")){
-        const liSpan = e.parentNode.previousElementSibling;
-        console.log(liSpan);
+        const liSpan = e.target.parentNode.previousElementSibling;
+        // console.log(liSpan);
+        liSpan.style.textDecoration= "line-through";
     };
     
 })
