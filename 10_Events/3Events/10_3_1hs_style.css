@@ -18,7 +18,7 @@ a {
 .header {
     position: relative;
     min-height: 60vh;
-    background: url(./10_2bg-img.jpg);
+    background: url(./10_3_1bg-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,9 +160,4 @@ a {
     margin: auto;
     margin-top: 1rem;
     border-radius: 3px;
-}
-
-.my-buttons {
-    margin-top: 1rem;
-    padding: 1rem 2rem;
 }
