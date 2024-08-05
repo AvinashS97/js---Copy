@@ -12,7 +12,7 @@ body {
 
 a {
     text-decoration: none;
-    /* color: white; */
+    color: white;
 }
 
 .header {
@@ -34,6 +34,7 @@ a {
 .nav {
     min-height: 8vh;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -42,6 +43,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 
 .headline {
@@ -57,6 +59,7 @@ a {
     border: none;
     cursor: pointer;
     outline: none;
+    border-radius: 5px;
 
 }
 
@@ -91,13 +94,12 @@ a {
 
 .form-todo input[type="text"] {
     width: 78%;
-    /* padding: 0.8rem; */
-
+    height: 4vh;
 }
 
 .form-todo input[type="submit"] {
     width: 20%;
-    height: 2.6vh;
+    height: 4vh;
     background: #808080;
     color: white;
     font-weight: bold;
@@ -110,11 +112,22 @@ a {
 }
 
 .todo_list li{
-    margin: 2rem auto;
+    padding: .5rem;
     background: #444;
     color: white;
     margin-top: 1.2rem;
     text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-btn{
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .section-signup {
@@ -147,7 +160,6 @@ a {
     width: 100%;
 }
 
-
 .form-group {
     margin-top: 1rem;
 }
@@ -159,5 +171,5 @@ a {
     display: block;
     margin: auto;
     margin-top: 1rem;
-    border-radius: 3px;
+    border-radius: 5px;
 }
