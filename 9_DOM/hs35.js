@@ -5,7 +5,7 @@
 
 // console.dir(document.body);
 // console.log(window.document);
-// console.dir(document);
+// console.dir(document);`
 
 //* Finding HTML Objects
 console.log(document.links);// to get all <area> or <a> that have href attribute.

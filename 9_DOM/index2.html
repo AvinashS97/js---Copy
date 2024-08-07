@@ -20,28 +20,28 @@
     </div>
 </body>
 <script>
-    //child and parent access
+    //* child and parent access
     const parent = document.querySelector(".days")
     // console.log(parent);
-    // console.log(parent.children);
-    // console.log(parent.children[1]);
+    // console.log(parent.children); // Access the child node
+    // console.log(parent.children[1]); // child node at 1st
     // console.log(parent.children[1].innerHTML);
 
-    // for(let i=0; i< parent.children.length; i++){
-    //     console.log(parent.children[i].innerHTML);
-    // }
+    for(let i=0; i< parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    }
+    parent.children[1].style.color= "Blue"
 
-    // parent.children[1].style.color= "Blue"
-
-    console.log(parent.firstElementChild); //get first child
-    console.log(parent.lastElementChild); //get last child
+    console.log(parent.firstElementChild); //* get first child
+    console.log(parent.lastElementChild); //* get last child
 
     const dayOne = document.querySelector('.day');
     console.log(dayOne);
-    console.log(dayOne.parentElement); //  to access Parents
-    console.log(dayOne.nextElementSibling);
+    console.log(dayOne.parentElement); //*  to access Parents
+    console.log(dayOne.nextElementSibling); //* It returns the reference of next html node sibling.
+    
 
-    console.log("Nodes:", parent.childNodes);
+    // console.log("Nodes:", parent.childNodes);
 
 </script>
 
