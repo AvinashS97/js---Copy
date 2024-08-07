@@ -1,9 +1,20 @@
-//! Event Object
-//* Events ---> are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs,
+//? Event Object ===> Event object is a object created by the browser when user perform some action , which holds all information about type of event occured and the element on which the event occurred.
+//? 2. Event object is passed to respective event handler , every time event occured.
+//? 3. So, we can access event object in callback function.
+//** ===================== */ ================== 
 
-//* Keypress Event
-//* Mouseover Event
-//* Mouseleave Event
+//? Events ---> Actions performed by user on browser are refered as events. Events are things that happen in the system when you are programming like the system produces (or "fires") a signal of some kind when an event occurs...
+//? Whenever event occurs browser creats an object which contains all information about the event and object on which event occured.
+
+//? Event listeners ===> are functions that wait for a specific event to occur and then execute js code (callbacks) assigned to it.
+//? We can attach event listeners by three ways...
+
+//? Events Type
+//* Keyboard Event ---> keydown, keyup, keypress
+//* Mouse Event ---> Mouse click, dbl click, mousedown, mouseup, mousemove
+//* Form Event ---> submit, reset, change 
+
+//? ===================================================
 
 console.log("for 10_2hs_index.html")//! *************
 
