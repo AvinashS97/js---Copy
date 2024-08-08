@@ -9,7 +9,7 @@ todoForm.addEventListener("submit", (e) => {
     // const newTodoText = console.log(todoInput.value); //* Print the input value
     const newTodoText = todoInput.value; //* It will Store the input value 
     const newLi = document.createElement("li");
-    const newLiInnerHtml = 
+    const newLiInnerHtml =
         `<span class="text">${newTodoText}</span>
         <div class="todo-buttons">
             <button class="todo-btn done">Done</button>
@@ -20,15 +20,15 @@ todoForm.addEventListener("submit", (e) => {
     todoInput.value = "";
 });
 
-todoList.addEventListener("click", (e)=>{
-    if(e.target.classList.contains("remove")){
+todoList.addEventListener("click", (e) => {
+    if (e.target.classList.contains("remove")) {
         const targetedLi = e.target.parentNode.parentNode;
         targetedLi.remove();
     };
-    if(e.target.classList.contains("done")){
+    if (e.target.classList.contains("done")) {
         const liSpan = e.target.parentNode.previousElementSibling;
         // console.log(liSpan);
-        liSpan.style.textDecoration= "line-through";
+        liSpan.style.textDecoration = "line-through";
     };
-    
+
 })

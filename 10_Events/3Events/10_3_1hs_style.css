@@ -105,13 +105,13 @@ a {
     font-weight: bold;
 }
 
-.todo_list{
+.todo_list {
     text-align: left;
     font-size: 1.2rem;
     list-style-type: none;
 }
 
-.todo_list li{
+.todo_list li {
     padding: .5rem;
     background: #444;
     color: white;
@@ -122,7 +122,7 @@ a {
     align-items: center;
 }
 
-.todo-btn{
+.todo-btn {
     padding: 0.4rem 1rem;
     font-size: 1rem;
     font-weight: bold;

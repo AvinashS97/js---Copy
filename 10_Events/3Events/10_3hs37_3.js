@@ -42,7 +42,7 @@ const child = document.querySelector(".child");
 
 //** Event Delegation */
 
-grandparent.addEventListener("click",(e)=>{
+grandparent.addEventListener("click", (e) => {
     console.log("Delegation on Grandparent")
     console.log(e.target);
     console.log(e.target.textContent);

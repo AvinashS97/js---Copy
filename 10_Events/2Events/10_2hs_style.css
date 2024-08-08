@@ -103,13 +103,13 @@ a {
     font-weight: bold;
 }
 
-.todo_list{
+.todo_list {
     text-align: left;
     font-size: 1.2rem;
     list-style-type: none;
 }
 
-.todo_list li{
+.todo_list li {
     margin: 2rem auto;
     background: #444;
     color: white;
