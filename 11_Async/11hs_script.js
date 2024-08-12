@@ -64,7 +64,8 @@
 
 
 //* Callback 
-// Ex. of Callbacks ===>
+
+//* Ex. of Callbacks ===> =====================================================
 // function myfunc1(callbackfns){
 //   console.log("Function is performing task-1");
 //   callbackfns()
@@ -75,21 +76,61 @@
 // });
 
 
-//* =====================================================
+//* Ex. of Callbacks ===> =====================================================
 
-function getTwoNumberAndSum(number1, number2, onSuccess, onfail) {
-  if (typeof number1 === "number" && typeof number2 === "number") {
-    onSuccess(number1, number2);
-  } else {
-    onfail();
-  }
-}
+// function getTwoNumberAndSum(number1, number2, onSuccess, onfail) {
+//   if (typeof number1 === "number" && typeof number2 === "number") {
+//     onSuccess(number1, number2);
+//   } else {
+//     onfail();
+//   }
+// }
 
-function sumTwoNum(num1, num2) {
-  console.log(num1 + num2)
-}
-function onfailure() {
-  console.log("Please Enter number only")
-}
+// function sumTwoNum(num1, num2) {
+//   console.log(num1 + num2)
+// }
+// function onfailure() {
+//   console.log("Please Enter number only")
+// }
 
-getTwoNumberAndSum(4, 5, sumTwoNum, onfailure);
+// getTwoNumberAndSum(4, 5, sumTwoNum, onfailure);
+
+
+//* CallBacks in Asynchronous programming... 
+//? callbacks, callback hell, pyramid of doom
+
+const heading1 = document.querySelector(".heading-1")
+const heading2 = document.querySelector(".heading-2")
+const heading3 = document.querySelector(".heading-3")
+const heading4 = document.querySelector(".heading-4")
+const heading5 = document.querySelector(".heading-5")
+const heading6 = document.querySelector(".heading-6")
+const heading7 = document.querySelector(".heading-7")
+setTimeout(() => {
+  heading1.textContent = "Hello-1"
+  heading1.style.color = "Violet";
+  setTimeout(() => {
+    heading2.textContent = "Hello-2"
+    heading2.style.color = "purple";
+    setTimeout(() => {
+      heading3.textContent = "Hello-3"
+      heading3.style.color = "red";
+      setTimeout(() => {
+        heading4.textContent = "Hello-4"
+        heading4.style.color = "pink";
+        setTimeout(() => {
+          heading5.textContent = "Hello-5"
+          heading5.style.color = "green";
+          setTimeout(() => {
+            heading6.textContent = "Hello-6"
+            heading6.style.color = "blue";
+            setTimeout(() => {
+              heading7.textContent = "Hello-7"
+              heading7.style.color = "brown";
+            }, 1000);
+          }, 3000);
+        },2000);
+      },1000);
+    },2000);
+  },2000);  
+},1000);
