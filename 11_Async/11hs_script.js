@@ -43,19 +43,53 @@
 // }, 1000);
 // console.log("setInterval Ends");
 
-const body = document.body;
-const button= document.querySelector("button")
+//* BackGround Changer 
 
-const intervalId = setInterval(() => {
-  const red = Math.floor(Math.random()*126);
-  const green = Math.floor(Math.random()*126);
-  const blue = Math.floor(Math.random()*126);
-  const rgbColor =` rgb(${red}, ${green}, ${blue})`;
-  body.style.background=rgbColor;
-}, 1000);
+// const body = document.body;
+// const button= document.querySelector("button")
+
+// const intervalId = setInterval(() => {
+//   const red = Math.floor(Math.random()*126);
+//   const green = Math.floor(Math.random()*126);
+//   const blue = Math.floor(Math.random()*126);
+//   const rgbColor =` rgb(${red}, ${green}, ${blue})`;
+//   body.style.background=rgbColor;
+// }, 1000);
 
 
-button.addEventListener("click",()=>{
-  clearInterval(intervalId);
-  button.textContent = body.style.background;
-})
+// button.addEventListener("click",()=>{
+//   clearInterval(intervalId);
+//   button.textContent = body.style.background;
+// })
+
+
+//* Callback 
+// Ex. of Callbacks ===>
+// function myfunc1(callbackfns){
+//   console.log("Function is performing task-1");
+//   callbackfns()
+// }
+
+// myfunc1(()=>{
+//   console.log("Function is performing task-2")
+// });
+
+
+//* =====================================================
+
+function getTwoNumberAndSum(number1, number2, onSuccess, onfail) {
+  if (typeof number1 === "number" && typeof number2 === "number") {
+    onSuccess(number1, number2);
+  } else {
+    onfail();
+  }
+}
+
+function sumTwoNum(num1, num2) {
+  console.log(num1 + num2)
+}
+function onfailure() {
+  console.log("Please Enter number only")
+}
+
+getTwoNumberAndSum(4, 5, sumTwoNum, onfailure);
