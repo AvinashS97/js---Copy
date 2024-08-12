@@ -99,6 +99,8 @@
 //* CallBacks in Asynchronous programming... 
 //? callbacks, callback hell, pyramid of doom
 
+//* Callback hell
+
 const heading1 = document.querySelector(".heading-1")
 const heading2 = document.querySelector(".heading-2")
 const heading3 = document.querySelector(".heading-3")
@@ -106,31 +108,69 @@ const heading4 = document.querySelector(".heading-4")
 const heading5 = document.querySelector(".heading-5")
 const heading6 = document.querySelector(".heading-6")
 const heading7 = document.querySelector(".heading-7")
-setTimeout(() => {
-  heading1.textContent = "Hello-1"
-  heading1.style.color = "Violet";
-  setTimeout(() => {
-    heading2.textContent = "Hello-2"
-    heading2.style.color = "purple";
-    setTimeout(() => {
-      heading3.textContent = "Hello-3"
-      heading3.style.color = "red";
-      setTimeout(() => {
-        heading4.textContent = "Hello-4"
-        heading4.style.color = "pink";
-        setTimeout(() => {
-          heading5.textContent = "Hello-5"
-          heading5.style.color = "green";
-          setTimeout(() => {
-            heading6.textContent = "Hello-6"
-            heading6.style.color = "blue";
-            setTimeout(() => {
-              heading7.textContent = "Hello-7"
-              heading7.style.color = "brown";
-            }, 1000);
-          }, 3000);
-        },2000);
-      },1000);
-    },2000);
-  },2000);  
-},1000);
+
+// setTimeout(() => {
+//   heading1.textContent = "Hello-1"
+//   heading1.style.color = "Violet";
+//   setTimeout(() => {
+//     heading2.textContent = "Hello-2"
+//     heading2.style.color = "purple";
+//     setTimeout(() => {
+//       heading3.textContent = "Hello-3"
+//       heading3.style.color = "red";
+//       setTimeout(() => {
+//         heading4.textContent = "Hello-4"
+//         heading4.style.color = "pink";
+//         setTimeout(() => {
+//           heading5.textContent = "Hello-5"
+//           heading5.style.color = "green";
+//           setTimeout(() => {
+//             heading6.textContent = "Hello-6"
+//             heading6.style.color = "blue";
+//             setTimeout(() => {
+//               heading7.textContent = "Hello-7"
+//               heading7.style.color = "brown";
+//             }, 1000);
+//           }, 3000);
+//         },2000);
+//       },1000);
+//     },2000);
+//   },2000);  
+// },1000);
+
+
+
+function changeText(element, text, color,time,onSuccessCallback,onfailurecallback){
+  setTimeout(()=>{
+    if(element){
+      element.textContent=text;
+      element.style.color= color;
+      if(onSuccessCallback){
+        onSuccessCallback()
+      };
+    }else{ // if element does not exist than else block will be executed...
+      console.log("Your element does not exist...");
+      if(onfailurecallback){
+        onfailurecallback();
+      }
+    }
+  },time)
+}
+
+//* Pyramid of doom
+
+changeText(heading1,"one","Violet", 1000,()=>{
+  changeText(heading2,"two","Purple", 1000,()=>{
+    changeText(heading3,"three","Red", 1000,()=>{
+      changeText(heading4,"four","Pink", 1000,()=>{
+        changeText(heading5,"five","Green", 1000,()=>{
+          changeText(heading6,"six","Blue", 1000,()=>{
+            changeText(heading7,"seven","Brown", 1000,()=>{
+  
+            }, ()=>{console.log("Heading7 does not exist")});
+          }, ()=>{console.log("Heading6 does not exist")});
+        }, ()=>{console.log("Heading5 does not exist")});
+      }, ()=>{console.log("Heading4 does not exist")});
+    }, ()=>{console.log("Heading3 does not exist")});
+  }, ()=>{console.log("Heading2 does not exist")});
+}, ()=>{console.log("Heading1 does not exist")});
