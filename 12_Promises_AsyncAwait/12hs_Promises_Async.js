@@ -2,16 +2,22 @@
 
 const kitchen = ["coffee", "vegetables", "rice", "salt"]
 
-const friedPromise = new Promise((resolve, reject)=>{
+const friedPromise = new Promise((resolve, reject) => {
     //* PRODUCING CODE
-    if(kitchen.includes("vegetables") && kitchen.includes("rice") && kitchen.includes("salt")){
+    if (kitchen.includes("vegetables") && kitchen.includes("rice") && kitchen.includes("salt")) {
         resolve("Frird Rice")
-    }else{
+    } else {
         reject("NotDone")
     }
 });
 
-    //* CONSUMING CODE ---> using 'then' method, 'then' method takes the callback fns as a input
-friedPromise.then((myrice)=>{
+//* CONSUMING CODE ---> using 'then' method, 'then' method can takes 2 callback fns as a input
+
+friedPromise.then((myrice) => {
     console.log("Let's eat", myrice)
-})
+},
+    (error) => {
+        console.log(error)
+    })
+
+// 20:00 Minutes    
