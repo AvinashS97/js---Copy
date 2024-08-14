@@ -132,45 +132,45 @@ const heading7 = document.querySelector(".heading-7")
 //               heading7.style.color = "brown";
 //             }, 1000);
 //           }, 3000);
-//         },2000);
-//       },1000);
-//     },2000);
-//   },2000);  
-// },1000);
+//         }, 2000);
+//       }, 1000);
+//     }, 2000);
+//   }, 2000);
+// }, 1000);
 
 
 
-function changeText(element, text, color,time,onSuccessCallback,onfailurecallback){
-  setTimeout(()=>{
-    if(element){
-      element.textContent=text;
-      element.style.color= color;
-      if(onSuccessCallback){
+function changeText(element, text, color, time, onSuccessCallback, onfailurecallback) {
+  setTimeout(() => {
+    if (element) {
+      element.textContent = text;
+      element.style.color = color;
+      if (onSuccessCallback) {
         onSuccessCallback()
       };
-    }else{ // if element does not exist than else block will be executed...
+    } else { // if element does not exist than else block will be executed...
       console.log("Your element does not exist...");
-      if(onfailurecallback){
+      if (onfailurecallback) {
         onfailurecallback();
       }
     }
-  },time)
+  }, time)
 }
 
 //* Pyramid of doom
 
-changeText(heading1,"one","Violet", 1000,()=>{
-  changeText(heading2,"two","Purple", 1000,()=>{
-    changeText(heading3,"three","Red", 1000,()=>{
-      changeText(heading4,"four","Pink", 1000,()=>{
-        changeText(heading5,"five","Green", 1000,()=>{
-          changeText(heading6,"six","Blue", 1000,()=>{
-            changeText(heading7,"seven","Brown", 1000,()=>{
-  
-            }, ()=>{console.log("Heading7 does not exist")});
-          }, ()=>{console.log("Heading6 does not exist")});
-        }, ()=>{console.log("Heading5 does not exist")});
-      }, ()=>{console.log("Heading4 does not exist")});
-    }, ()=>{console.log("Heading3 does not exist")});
-  }, ()=>{console.log("Heading2 does not exist")});
-}, ()=>{console.log("Heading1 does not exist")});
+changeText(heading1, "one", "Violet", 1000, () => {
+  changeText(heading2, "two", "Purple", 1000, () => {
+    changeText(heading3, "three", "Red", 1000, () => {
+      changeText(heading4, "four", "Pink", 1000, () => {
+        changeText(heading5, "five", "Green", 1000, () => {
+          changeText(heading6, "six", "Blue", 1000, () => {
+            changeText(heading7, "seven", "Brown", 1000, () => {
+
+            }, () => { console.log("Heading7 does not exist") });
+          }, () => { console.log("Heading6 does not exist") });
+        }, () => { console.log("Heading5 does not exist") });
+      }, () => { console.log("Heading4 does not exist") });
+    }, () => { console.log("Heading3 does not exist") });
+  }, () => { console.log("Heading2 does not exist") });
+}, () => { console.log("Heading1 does not exist") });

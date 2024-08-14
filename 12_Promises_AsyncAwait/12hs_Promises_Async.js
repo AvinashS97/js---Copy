@@ -14,6 +14,8 @@
 // });
 
 //* CONSUMING CODE ---> using 'then' method, 'then' method can takes 2 callback fns as a input
+//* then method always returns Promise
+//* .then can be applied only on fns...
 
 // friedPromise.then((myrice) => {
 //     console.log("Let's eat", myrice)
@@ -65,23 +67,38 @@
 //     }
 // )
 
-//! Promise && setTimeout()
-//* resolve / reject a promise after 2 seconds...
+// //! Promise && setTimeout()
+// //* resolve / reject a promise after 2 seconds...
 
-function newPromise(){
-    return new Promise((resolve, reject)=>{
-        const Value= false;
-        setTimeout(() => {
-            if(Value){
-                resolve();
-            }else{
-                reject();
-            }
-        }, 2000);
-    })
-}
+// function newPromise(){
+//     return new Promise((resolve, reject)=>{
+//         const Value= false;
+//         setTimeout(() => {
+//             if(Value){
+//                 resolve();
+//             }else{
+//                 reject();
+//             }
+//         }, 2000);
+//     })
+// }
 
-newPromise().then(()=>{console.log("Resolved")})
-            .catch(()=>{console.log("Rejected");})
+// newPromise().then(()=>{console.log("Resolved")})
+//             .catch(()=>{console.log("Rejected");})
+
+//! Promise Resolve ---> resolve return Promise...
+//      Ex:-
+// Promise.resolve(5).then(Value=>{
+//     console.log(Value);
+// })
+
+const heading1 = document.querySelector(".heading-1")
+const heading2 = document.querySelector(".heading-2")
+const heading3 = document.querySelector(".heading-3")
+const heading4 = document.querySelector(".heading-4")
+const heading5 = document.querySelector(".heading-5")
+const heading6 = document.querySelector(".heading-6")
+const heading7 = document.querySelector(".heading-7")
+
 
 
