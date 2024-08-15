@@ -118,14 +118,14 @@ function changeText(element, text, color, time) {
     })
 }
 
-changeText(heading1, "One","red",1000)
-.then(()=>changeText(heading2, "Two","purple",1000))
-.then(()=>changeText(heading3, "Three","Violet",1000))
-.then(()=>changeText(heading4, "Four","Magenta",1000))
-.then(()=>changeText(heading5, "Five","Blue",1000))
-.then(()=>changeText(heading6, "Six","Green",1000))
-.then(()=>changeText(heading7, "Seven","Orange",1000))
-.catch((error)=>{alert(error)})
+changeText(heading1, "One", "red", 1000)
+    .then(() => changeText(heading2, "Two", "purple", 1000))
+    .then(() => changeText(heading3, "Three", "Violet", 1000))
+    .then(() => changeText(heading4, "Four", "Magenta", 1000))
+    .then(() => changeText(heading5, "Five", "Blue", 1000))
+    .then(() => changeText(heading6, "Six", "Green", 1000))
+    .then(() => changeText(heading7, "Seven", "Orange", 1000))
+    .catch((error) => { alert(error) })
 
 //* =====================================================
 //! AJAX ---> Asynchronous JvaScript And XML...
