@@ -100,5 +100,24 @@ const heading5 = document.querySelector(".heading-5")
 const heading6 = document.querySelector(".heading-6")
 const heading7 = document.querySelector(".heading-7")
 
+function changeText(element, text, color, time) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (element) {
+                element.textContent = text;
+                element.style.color = color;
+                resolve();
+            } else { // if element does not exist than else block will be executed...
+                reject();
+            }
+        }, time)
+    })
+}
 
-
+const returnPromise = changeText(heading1, "One","red",1000)
+returnPromise.then(()=>{
+    return changeText(heading2, "Two","purple",1000)
+})
+.then(()=>{return changeText(heading3, "Three","Violet",1000)})
+.then(()=>{return changeText(heading4, "Four","Magenta",1000)})
+.then(()=>{return changeText(heading5, "Five","Blue",1000)})
