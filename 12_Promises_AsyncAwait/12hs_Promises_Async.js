@@ -43,7 +43,7 @@
 //         console.log(error);
 //     })
 
-// =======================================================
+//* =======================================================
 //! Function Returning Promise
 
 // function teaPromise(){
@@ -67,6 +67,7 @@
 //     }
 // )
 
+//* =======================================================
 // //! Promise && setTimeout()
 // //* resolve / reject a promise after 2 seconds...
 
@@ -85,6 +86,9 @@
 
 // newPromise().then(()=>{console.log("Resolved")})
 //             .catch(()=>{console.log("Rejected");})
+
+
+//* =======================================================
 
 //! Promise Resolve ---> resolve return Promise...
 //      Ex:-
@@ -108,16 +112,27 @@ function changeText(element, text, color, time) {
                 element.style.color = color;
                 resolve();
             } else { // if element does not exist than else block will be executed...
-                reject();
+                reject("Element Not Found");
             }
         }, time)
     })
 }
 
-const returnPromise = changeText(heading1, "One","red",1000)
-returnPromise.then(()=>{
-    return changeText(heading2, "Two","purple",1000)
-})
-.then(()=>{return changeText(heading3, "Three","Violet",1000)})
-.then(()=>{return changeText(heading4, "Four","Magenta",1000)})
-.then(()=>{return changeText(heading5, "Five","Blue",1000)})
+changeText(heading1, "One","red",1000)
+.then(()=>changeText(heading2, "Two","purple",1000))
+.then(()=>changeText(heading3, "Three","Violet",1000))
+.then(()=>changeText(heading4, "Four","Magenta",1000))
+.then(()=>changeText(heading5, "Five","Blue",1000))
+.then(()=>changeText(heading6, "Six","Green",1000))
+.then(()=>changeText(heading7, "Seven","Orange",1000))
+.catch((error)=>{alert(error)})
+
+//* =======================================================
+//! AJAX ---> Asynchronous JvaScript And XML...
+//** It is a set of "web development techniques" */
+//** Using many web technologies on the client-side... */
+//** to create asynchronous web applications...*/
+
+//** AJAX can send and recieve*/
+
+
