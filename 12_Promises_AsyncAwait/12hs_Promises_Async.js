@@ -127,12 +127,12 @@ changeText(heading1, "One","red",1000)
 .then(()=>changeText(heading7, "Seven","Orange",1000))
 .catch((error)=>{alert(error)})
 
-//* =======================================================
+//* =====================================================
 //! AJAX ---> Asynchronous JvaScript And XML...
 //** It is a set of "web development techniques" */
 //** Using many web technologies on the client-side... */
 //** to create asynchronous web applications...*/
 
-//** AJAX can send and recieve*/
+//** AJAX can send and retrieve data from a server asynchronously (in the background) without interfering with the display abd behaviour of the existing page... */
 
 
