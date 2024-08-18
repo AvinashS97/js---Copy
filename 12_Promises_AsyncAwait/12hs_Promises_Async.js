@@ -1,4 +1,7 @@
+//* Promise are used to handle async operations in JavaScript...
+//* Promise is likean Emp ty object data value in it...
 //* A Promise is an Object that links PRODUCING CODE( is code that can take some time) and CONSUMING CODE (is code that must wait for the result) ...
+
 
 
 // console.log("Start")
@@ -8,7 +11,7 @@
 //     //* PRODUCING CODE
 //     if (kitchen.includes("vegetables") && kitchen.includes("rice") && kitchen.includes("salt")) {
 //         resolve({ Value: "Fried Rice" })
-//     } else {
+//     } else { 
 //         reject("NotDone")
 //     }
 // });
@@ -118,6 +121,7 @@ function changeText(element, text, color, time) {
     })
 }
 
+//* ===== Promise Chaining =====
 changeText(heading1, "One", "red", 1000)
     .then(() => changeText(heading2, "Two", "purple", 1000))
     .then(() => changeText(heading3, "Three", "Violet", 1000))
@@ -146,4 +150,6 @@ changeText(heading1, "One", "red", 1000)
 //? XHR(XML Http Request)
 // 01:10:00
 
+const xhr = XMLHttpRequest();
+console.log(xhr)
 
