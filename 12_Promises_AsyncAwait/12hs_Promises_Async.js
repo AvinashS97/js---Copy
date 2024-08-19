@@ -140,9 +140,9 @@ changeText(heading1, "One", "red", 1000)
 //** AJAX can send and retrieve data from a server asynchronously (in the background) without interfering with the display abd behaviour of the existing page... */
 
 //** We have 3 most common ways to create and send request to server */
-        //**i) xml HttpRequest(old ways) */ 
-        //**ii) fetch API (new ways) */ 
-        //**iii) axios (A third party library) */ 
+//**i) xml HttpRequest(old ways) */ 
+//**ii) fetch API (new ways) */ 
+//**iii) axios (A third party library) */ 
 
 
 //* ====================================================================
@@ -151,5 +151,5 @@ changeText(heading1, "One", "red", 1000)
 // 01:10:00
 
 const xhr = XMLHttpRequest();
-console.log(xhr)
+console.log(xhr);
 
