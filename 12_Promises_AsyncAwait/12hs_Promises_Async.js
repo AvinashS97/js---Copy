@@ -3,7 +3,6 @@
 //* A Promise is an Object that links PRODUCING CODE( is code that can take some time) and CONSUMING CODE (is code that must wait for the result) ...
 
 
-
 // console.log("Start")
 // const kitchen = ["coffee", "vegetables", "rice", "salt"]
 
@@ -99,37 +98,37 @@
 //     console.log(Value);
 // })
 
-const heading1 = document.querySelector(".heading-1")
-const heading2 = document.querySelector(".heading-2")
-const heading3 = document.querySelector(".heading-3")
-const heading4 = document.querySelector(".heading-4")
-const heading5 = document.querySelector(".heading-5")
-const heading6 = document.querySelector(".heading-6")
-const heading7 = document.querySelector(".heading-7")
+// const heading1 = document.querySelector(".heading-1")
+// const heading2 = document.querySelector(".heading-2")
+// const heading3 = document.querySelector(".heading-3")
+// const heading4 = document.querySelector(".heading-4")
+// const heading5 = document.querySelector(".heading-5")
+// const heading6 = document.querySelector(".heading-6")
+// const heading7 = document.querySelector(".heading-7")
 
-function changeText(element, text, color, time) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (element) {
-                element.textContent = text;
-                element.style.color = color;
-                resolve();
-            } else { // if element does not exist than else block will be executed...
-                reject("Element Not Found");
-            }
-        }, time)
-    })
-}
+// function changeText(element, text, color, time) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (element) {
+//                 element.textContent = text;
+//                 element.style.color = color;
+//                 resolve();
+//             } else { // if element does not exist than else block will be executed...
+//                 reject("Element Not Found");
+//             }
+//         }, time)
+//     })
+// }
 
 //* ===== Promise Chaining =====
-changeText(heading1, "One", "red", 1000)
-    .then(() => changeText(heading2, "Two", "purple", 1000))
-    .then(() => changeText(heading3, "Three", "Violet", 1000))
-    .then(() => changeText(heading4, "Four", "Magenta", 1000))
-    .then(() => changeText(heading5, "Five", "Blue", 1000))
-    .then(() => changeText(heading6, "Six", "Green", 1000))
-    .then(() => changeText(heading7, "Seven", "Orange", 1000))
-    .catch((error) => { alert(error) })
+// changeText(heading1, "One", "red", 1000)
+//     .then(() => changeText(heading2, "Two", "purple", 1000))
+//     .then(() => changeText(heading3, "Three", "Violet", 1000))
+//     .then(() => changeText(heading4, "Four", "Magenta", 1000))
+//     .then(() => changeText(heading5, "Five", "Blue", 1000))
+//     .then(() => changeText(heading6, "Six", "Green", 1000))
+//     .then(() => changeText(heading7, "Seven", "Orange", 1000))
+    // .catch((error) => { alert(error) })
 
 //* =====================================================
 //! AJAX ---> Asynchronous JvaScript And XML...
@@ -148,8 +147,15 @@ changeText(heading1, "One", "red", 1000)
 //* ====================================================================
 
 //? XHR(XML Http Request)
-// 01:10:00
 
-const xhr = XMLHttpRequest();
+//* How to use API---
+const URL = "https://jsonplaceholder.typicode.com/posts";
+const xhr = new XMLHttpRequest();
 console.log(xhr);
 
+//*step-1 ---> Use open method
+xhr.open("GET", URL);
+xhr.send();
+
+
+// 01:10:00
