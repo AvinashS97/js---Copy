@@ -151,11 +151,14 @@
 //* How to use API---
 const URL = "https://jsonplaceholder.typicode.com/posts";
 const xhr = new XMLHttpRequest();
-console.log(xhr);
+// console.log(xhr);
 
 //*step-1 ---> Use open method
 xhr.open("GET", URL);
+
+xhr.onreadystatechange = function(){
+    console.log(xhr.readyState)
+}
 xhr.send();
 
-
-// 01:10:00
+// 01:15:00
