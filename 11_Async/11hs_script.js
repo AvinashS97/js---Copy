@@ -21,7 +21,7 @@
 
 // console.log("setTimeout start");
 
-// const id = setTimeout(()=>{
+// const id = setTimeout( () => {
 //   console.log("In setTimeout fns") 
 // }, 1000);
 
@@ -57,7 +57,7 @@
 // }, 1000);
 
 
-// button.addEventListener("click",()=>{
+// button.addEventListener("click",()=> {
 //   clearInterval(intervalId);
 //   button.textContent = body.style.background;
 // })
@@ -66,12 +66,12 @@
 //* Callback 
 
 //* Ex. of Callbacks ===> =====================================================
-// function myfunc1(callbackfns){
+// function myfunc1(callbackfns) {
 //   console.log("Function is performing task-1");
 //   callbackfns()
 // }
 
-// myfunc1(()=>{
+// myfunc1(()=> {
 //   console.log("Function is performing task-2")
 // });
 
