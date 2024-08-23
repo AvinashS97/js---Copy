@@ -13,7 +13,7 @@ const p = document.createElement('p');
 let prevGuess = []; //* it store previous guesses
 let numGuess = 1; //* number of attempt guesses
 
-let playGame = true;  
+let playGame = true;
 
 if (playGame) {
     submit.addEventListener('click', function (e) {
@@ -75,10 +75,10 @@ function endGame() {
     playGame = false;
     newGame();
 }
- 
+
 function newGame() {
     const newGameButton = document.querySelector('#newGame');
-    newGameButton.addEventListener('click', function(e){
+    newGameButton.addEventListener('click', function (e) {
         randomNumber = parseInt(Math.random() * 100 + 1);
         prevGuess = [];
         numGuess = 1;
