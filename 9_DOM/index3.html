@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Element to DOM</title>
 </head>
+
 <body>
     <h1>Create and Insert Element</h1>
-    <p><h3>Methods</h3>
-        setAttribute('attribute_name','value')<br> createElement('tag_name')<br>
-        appendChild(element)
+    <p>
+    <h3>Methods</h3>
+    setAttribute('attribute_name','value')<br> createElement('tag_name')<br>
+    appendChild(element)
     </p>
 </body>
 <script>
-    const div= document.createElement('div'); //* Create a Div
+    const div = document.createElement('div'); //* Create a Div
     console.log(div);
-    div.className="main";
-    div.id = Math.round(Math.random()*10+1) // set the id with Math...
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1) // set the id with Math...
     div.setAttribute("title", "Generated Title") //* set the title
     // div.innerHTML= "Avinash" //* Place the value by innerHTML or by createTextNode
     div.style.backgroundColor = "green"; //* Change styling
@@ -24,4 +27,5 @@
     div.appendChild(addtext)
     document.body.appendChild(div) //* Put the values on body
 </script>
+
 </html>
