@@ -45,7 +45,6 @@ console.log(a != b) && (b != a);  //* logical and operator */
 console.log(a != b) || (b == a);  //* logical or operator*/
 
 //! conditional statement (if,else-if, else)
-
 console.log("this is conditional section");
 let age = 18;
 
@@ -60,7 +59,6 @@ else {
 }
 
 //! Ternary Operator - it use  if- else condition in one line.
-
 /* 
     syntax- condition ? exp 1 : exp 2
     (marks>10)? "exp 1":"exp 2" 
