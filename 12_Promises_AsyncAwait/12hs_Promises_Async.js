@@ -15,7 +15,7 @@
 //     }
 // });
 
-//* CONSUMING CODE ---> using 'then' method, 'then' method can takes 2 callback fns as a input
+//* CONSUMING CODE  ---> using 'then' method, 'then' method can takes 2 callback fns as a input
         /* then method always returns Promise...*/
         /* .then can be applied only on fns...*/
 
