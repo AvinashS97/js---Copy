@@ -8,6 +8,7 @@
 
 // const friedPromise = new Promise((resolve, reject) => {
 //     //* PRODUCING CODE
+
 //     if (kitchen.includes("vegetables") && kitchen.includes("rice") && kitchen.includes("salt")) {
 //         resolve({ Value: "Fried Rice" })
 //     } else { 
