@@ -16,8 +16,8 @@
 // });
 
 //* CONSUMING CODE ---> using 'then' method, 'then' method can takes 2 callback fns as a input
-//* then method always returns Promise
-//* .then can be applied only on fns...
+        /* then method always returns Promise...*/
+        /* .then can be applied only on fns...*/
 
 // friedPromise.then((myrice) => {
 //     console.log("Let's eat", myrice)
@@ -71,6 +71,7 @@
 
 //* =======================================================
 // //! Promise && setTimeout()
+
 // //* resolve / reject a promise after 2 seconds...
 
 // function newPromise(){
@@ -128,7 +129,7 @@
 //     .then(() => changeText(heading5, "Five", "Blue", 1000))
 //     .then(() => changeText(heading6, "Six", "Green", 1000))
 //     .then(() => changeText(heading7, "Seven", "Orange", 1000))
-    // .catch((error) => { alert(error) })
+//    // .catch((error) => { alert(error) })
 
 //* =====================================================
 //! AJAX ---> Asynchronous JvaScript And XML...
