@@ -153,7 +153,7 @@
 const URL = "https://jsonplaceholder.typicode.com/posts";
 const xhr = new XMLHttpRequest();
 // console.log(xhr);
-console.log(xhr.readyState); // 0 (Unsent)
+// console.log(xhr.readyState); // 0 (Unsent)
 
 //*step-1 ---> Use open method
 
@@ -168,14 +168,25 @@ xhr.open("GET", URL);
 
 //! OR
 
-xhr.onload = function(){
-    console.log(xhr.readyState) // Runs when operation is completed...  
-    // const response = xhr.response;
-    // const data = JSON.parse(response);
-    // console.log(data);
-}
-xhr.send();
-
 //! XMLHttpRequest.ReadyState---> It return the state an XMLHttpRequest client is in XHR client exist in the resultant state...
+
+xhr.onload = function(){
+    // console.log(xhr.readyState) // Runs when operation is completed...  
+    // const response = xhr.response;
+    if(xhr.status>= 200&& xhr.status<300){
+        const data = JSON.parse(xhr.response);
+        console.log(data);
+    }else{
+        console.log("Something is wrong...")
+    }
+}
+
+
+xhr.onerror= (err)=>{
+    console.log("Network Error!!!")
+    console.log(err);
+}
+
+xhr.send();
 
 // 01:30:00
