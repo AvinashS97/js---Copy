@@ -17,8 +17,8 @@
 // });
 
 //* CONSUMING CODE  ---> using 'then' method, 'then' method can takes 2 callback fns as a input
-        /* then method always returns Promise...*/
-        /* .then can be applied only on fns...*/
+/* then method always returns Promise...*/
+/* .then can be applied only on fns...*/
 
 // friedPromise.then((myrice) => {
 //     console.log("Let's eat", myrice)
@@ -243,3 +243,32 @@
 // 01:51:00
 
 //? ii) fetch API (new ways)
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+// fetch(URL)
+//         .then(response =>{
+//                 return response.json();
+//         })
+//         .then(data =>{
+//                 console.log(data)
+//         })
+//         .catch(error =>{
+//                 console.log("inside catch")
+//                 console.log(error);
+//         })
+
+
+//? Fetch API with Async await ===>  use async and await keyword...
+const URL = "https://jsonplaceholder.typicode.com/posts";
+async function getposts() {
+        const response = await fetch(URL);
+        const data = await response.json();
+        return data;
+}
+getposts()
+        .then((mydata) => {
+                console.log(mydata)
+        })
+        .catch(error => {
+                console.log("Inside error")
+                console.log(error);
+        })
