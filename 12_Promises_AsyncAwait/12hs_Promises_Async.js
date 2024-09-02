@@ -148,7 +148,7 @@
 
 //* ====================================================================
 
-//? XHR(XML Http Request)
+//? i) xml HttpRequest(old ways) 
 //! XMLHttpRequest.ReadyState---> It return the state an XMLHttpRequest client is in XHR client exist in the resultant state...
 
 //* How to use API---
@@ -194,50 +194,52 @@
 
 //! OR we can use API in another way of xml HttpRequest
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
+// const URL = "https://jsonplaceholder.typicode.com/posts";
 
-function sendRequest(method, url){
-    return new Promise(function(resolve,reject){
-        const xhr = new XMLHttpRequest();
-        xhr.open(method,url);
-        xhr.onload = function (){
-            if(xhr.status>=200 && xhr.status <= 300){
-                resolve(xhr.response);
-            }else{
-                reject(new Error("Something wrong"))
-            }
-        }
+// function sendRequest(method, url){
+//     return new Promise(function(resolve,reject){
+//         const xhr = new XMLHttpRequest();
+//         xhr.open(method,url);
+//         xhr.onload = function (){
+//             if(xhr.status>=200 && xhr.status <= 300){
+//                 resolve(xhr.response);
+//             }else{
+//                 reject(new Error("Something wrong"))
+//             }
+//         }
 
-        xhr.onerror = function(){
-            reject(new Error("Something error"))
-        }
-        xhr.send();
-    })
-}
+//         xhr.onerror = function(){
+//             reject(new Error("Something error"))
+//         }
+//         xhr.send();
+//     })
+// }
 
-sendRequest("GET", URL)
-.then(response =>{
-    const data = JSON.parse(response);
-    // console.log(data);
-    return data;
-})
-.then(data=>{
-    const id = data[3].id;
-    return id;
-    // console.log(data)
-})
-.then(id =>{
-    const url = `${URL}/${id}`;
-    // console.log(url);
-    return sendRequest("GET",url)
-})
-.then(newResponse=>{
-    console.log(newResponse);
-})
-.catch(error =>{
-    console.log(error);
-})
+// sendRequest("GET", URL)
+// .then(response =>{
+//     const data = JSON.parse(response);
+//     // console.log(data);
+//     return data;
+// })
+// .then(data=>{
+//     const id = data[3].id;
+//     return id;
+//     // console.log(data)
+// })
+// .then(id =>{
+//     const url = `${URL}/${id}`;
+//     // console.log(url);
+//     return sendRequest("GET",url)
+// })
+// .then(newResponse=>{
+//     console.log(newResponse);
+// })
+// .catch(error =>{
+//     console.log(error);
+// })
 
 //Chaining of APi responses (Promise)...
 
-// 01:40:00
+// 01:51:00
+
+//? ii) fetch API (new ways)
