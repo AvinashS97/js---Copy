@@ -149,45 +149,95 @@
 //* ====================================================================
 
 //? XHR(XML Http Request)
-
-//* How to use API---
-const URL = "https://jsonplaceholder.typicode.com/posts";
-const xhr = new XMLHttpRequest();
-// console.log(xhr);
-// console.log(xhr.readyState); // 0 (Unsent)
-
-//*step-1 ---> Use open method
-
-xhr.open("GET", URL);
-
-// console.log(xhr.readyState); // 1 (Sent)
-// xhr.onreadystatechange = function(){
-//     // console.log(xhr);
-//     console.log(xhr.readyState); // 
-// }
-// xhr.send();
-
-//! OR
-
 //! XMLHttpRequest.ReadyState---> It return the state an XMLHttpRequest client is in XHR client exist in the resultant state...
 
-xhr.onload = function(){
-    // console.log(xhr.readyState) // Runs when operation is completed...  
-    // const response = xhr.response;
-    if(xhr.status>= 200&& xhr.status<300){
-        const data = JSON.parse(xhr.response);
-        console.log(data);
-    }else{
-        console.log("Something is wrong...")
-    }
+//* How to use API---
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+// const xhr = new XMLHttpRequest();
+// // console.log(xhr);
+// // console.log(xhr.readyState); // 0 (Unsent)
+
+// //*step-1 ---> Use open method
+
+// xhr.open("GET", URL);
+
+// // console.log(xhr.readyState); // 1 (Sent)
+// // xhr.onreadystatechange = function(){
+// //     console.log(xhr.readyState); // 
+// // }
+// // xhr.send();
+
+// //! OR
+
+
+// //*step-2 ---> Use onload method
+// xhr.onload = function(){
+//     // console.log(xhr.readyState) // Runs when operation is completed...
+//     if(xhr.status>= 200&& xhr.status<300){
+//         const data = JSON.parse(xhr.response);
+//         // console.log(data);
+//         const id = data[3];
+//         console.log(id)
+//     }else{
+//         console.log("Something is wrong...")
+//     }
+// }
+
+// //! ERROR HANDLING
+// xhr.onerror= (err)=>{
+//     console.log("Network Error!!!")
+//     // console.log(err);
+// }
+
+// xhr.send();
+
+
+//! OR we can use API in another way of xml HttpRequest
+
+const URL = "https://jsonplaceholder.typicode.com/posts";
+
+function sendRequest(method, url){
+    return new Promise(function(resolve,reject){
+        const xhr = new XMLHttpRequest();
+        xhr.open(method,url);
+        xhr.onload = function (){
+            if(xhr.status>=200 && xhr.status <= 300){
+                resolve(xhr.response);
+            }else{
+                reject(new Error("Something wrong"))
+            }
+        }
+
+        xhr.onerror = function(){
+            reject(new Error("Something error"))
+        }
+        xhr.send();
+    })
 }
 
+sendRequest("GET", URL)
+.then(response =>{
+    const data = JSON.parse(response);
+    // console.log(data);
+    return data;
+})
+.then(data=>{
+    const id = data[3].id;
+    return id;
+    // console.log(data)
+})
+.then(id =>{
+    const url = `${URL}/${id}`;
+    // console.log(url);
+    return sendRequest("GET",url)
+})
+.then(newResponse=>{
+    console.log(newResponse);
+})
+.catch(error =>{
+    console.log(error);
+})
 
-xhr.onerror= (err)=>{
-    console.log("Network Error!!!")
-    console.log(err);
-}
+//Chaining of APi responses (Promise)...
 
-xhr.send();
-
-// 01:30:00
+// 01:40:00
