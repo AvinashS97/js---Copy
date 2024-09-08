@@ -1,14 +1,14 @@
 //* Promise are used to handle async operations in JavaScript...
-//* Promise is likean Emp ty object data value in it...
+//* Promise is like an Empty object data value in it...
 //* A Promise is an Object that links PRODUCING CODE( is code that can take some time) and CONSUMING CODE (is code that must wait for the result) ...
-
+//* Promise objects represents the eventual completion (or failure) of an asynchronous operation and its resulting value...
 
 // console.log("Start")
 // const kitchen = ["coffee", "vegetables", "rice", "salt"]
 
 // const friedPromise = new Promise((resolve, reject) => {
+        
 //     //* PRODUCING CODE
-
 //     if (kitchen.includes("vegetables") && kitchen.includes("rice") && kitchen.includes("salt")) {
 //         resolve({ Value: "Fried Rice" })
 //     } else { 
