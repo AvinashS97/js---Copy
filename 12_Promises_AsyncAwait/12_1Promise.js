@@ -47,7 +47,7 @@
 //         if(!error){
 //             resolve({username:"Avinash", password: "123890"})
 //         }else{
-//             reject('ERROR: Something gets Wrong')
+//             reject('ERROR: Something went wrong')
 //         }
 //     },1000)
 // })
@@ -68,18 +68,25 @@
 
 const promiseFive = new Promise(function (resolve, reject) {
     setTimeout(() => {
-        let error = false;
+        let error = true;
         if (!error) {
             resolve({ username: "JavaScript", password: "456678"})
         } else {
-            reject('ERROR: Something gets Wrong')
+            reject('ERROR: JS went wrong')
         }
     },1000)
 })
 
 async function consumePromiseFive() {
-    const Response = await promiseFive;
+    // const Response = await promiseFive;
+    // console.log(Response); // async await can't handle error directly... so we use try & catch...
+
+    try{
+        const Response = await promiseFive;
     console.log(Response);
+    } catch (error) {
+        console.log(error); 
+    }
 }
 
 consumePromiseFive();
