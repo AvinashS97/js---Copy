@@ -66,27 +66,56 @@
 
 //!OR
 
-const promiseFive = new Promise(function (resolve, reject) {
-    setTimeout(() => {
-        let error = true;
-        if (!error) {
-            resolve({ username: "JavaScript", password: "456678"})
-        } else {
-            reject('ERROR: JS went wrong')
-        }
-    },1000)
-})
+// const promiseFive = new Promise(function (resolve, reject) {
+//     setTimeout(() => {
+//         let error = true;
+//         if (!error) {
+//             resolve({ username: "JavaScript", password: "456678"})
+//         } else {
+//             reject('ERROR: JS went wrong')
+//         }
+//     },1000)
+// })
 
-async function consumePromiseFive() {
-    // const Response = await promiseFive;
-    // console.log(Response); // async await can't handle error directly... so we use try & catch...
+//* We can also handle promise with async & await rather than .than or .catch
 
-    try{
-        const Response = await promiseFive;
-    console.log(Response);
-    } catch (error) {
-        console.log(error); 
-    }
-}
+// async function consumePromiseFive() {
+//     // const Response = await promiseFive;
+//     // console.log(Response); // async await can't handle error directly... so we use try & catch...
 
-consumePromiseFive();
+//     try{
+//         const Response = await promiseFive;
+//     console.log(Response);
+//     } catch (error) {
+//         console.log(error); 
+//     }
+// }
+// consumePromiseFive();
+
+//! Now we Know about fetch...
+
+// async function getAllUsers() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json();
+//         console.log(data)
+//     } catch (error) {
+//        console.log("E: ",error);    
+//     }
+// }
+// getAllUsers();
+
+//!OR
+
+// fetch ('https://jsonplaceholder.typicode.com/users')
+// .then((response)=>{
+//     return response.json();
+// })
+// .then((data)=>{
+//     console.log(data)
+// })
+// .catch((error)=>{
+//     console.log(error);})
+
+//! Working of fetch API:
+/* The global fetch() method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available... */ 
