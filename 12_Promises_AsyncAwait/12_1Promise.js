@@ -92,6 +92,44 @@
 // }
 // consumePromiseFive();
 
+
+//! API REQUEST
+
+//** We have 3 most common ways to create and send request to server */
+//**i) xml HttpRequest(old ways) */ 
+//**ii) fetch API (new ways) */ 
+//**iii) axios (A third party library) */ 
+
+//** i) XML HttpRequest */
+    /* Properties:- 
+     * XHR.readyState ,XHR.response, XHR.responseType, .upload, .channel, .satus, .statusText ...  
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //! Now we Know about fetch...
 
 // async function getAllUsers() {
@@ -119,3 +157,14 @@
 
 //! Working of fetch API:
 /* The global fetch() method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available... */ 
+
+fetch('https://api.github.com/users/AvinashS97')
+.then(Response=>{
+    return Response.json();
+})
+.then((data)=>{
+    console.log(data.avatar_url)
+})
+.catch((error)=>{
+    console.log(error);
+})

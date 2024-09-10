@@ -7,7 +7,7 @@
 // const kitchen = ["coffee", "vegetables", "rice", "salt"]
 
 // const friedPromise = new Promise((resolve, reject) => {
-        
+
 //     //* PRODUCING CODE
 //     if (kitchen.includes("vegetables") && kitchen.includes("rice") && kitchen.includes("salt")) {
 //         resolve({ Value: "Fried Rice" })
@@ -145,7 +145,6 @@
 //**ii) fetch API (new ways) */ 
 //**iii) axios (A third party library) */ 
 
-
 //* ====================================================================
 
 //? i) xml HttpRequest(old ways) 
@@ -240,7 +239,6 @@
 
 //Chaining of APi responses (Promise)...
 
-// 01:51:00
 
 //? ii) fetch API (new ways)
 // const URL = "https://jsonplaceholder.typicode.com/posts";
