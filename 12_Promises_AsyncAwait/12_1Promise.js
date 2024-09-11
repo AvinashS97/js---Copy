@@ -106,6 +106,42 @@
     */
 
 
+// const url = 'https://api.github.com/users/AvinashS97'
+// const xhr = new XMLHttpRequest();
+// xhr.open('GET',url)
+// xhr.onreadystatechange = function(){
+//     console.log(xhr.readyState); // gives continuous changes in state value
+//     if(xhr.readyState === 4){
+//         const data = JSON.parse(this.responseText); // it will change to the coming data into json format so thst we can access them later... 
+//         console.log(data.login);
+//     }
+// }
+// xhr.send();  
+// // console.log(xhr.readyState); //gives state value
+
+const getBtn = document.getElementById('get-btn');
+const postBtn = document.getElementById('post-btn');
+
+// const url = 'https://api.github.com/users/hiteshchoudhary';
+
+const getData = ()=>{
+    const xhr = new XMLHttpRequest;
+    xhr.open('GET', 'https://api.github.com/users/hiteshchoudhary');
+
+    xhr.onload= ()=>{
+        const data = JSON.parse(xhr.response);
+        console.log(data)
+    }
+    xhr.send();
+}
+
+const sendData = ()=>{}
+
+getBtn.addEventListener('click',getData)
+postBtn.addEventListener('click',sendData)
+
+// 06:36
+
 
 
 
@@ -158,13 +194,13 @@
 //! Working of fetch API:
 /* The global fetch() method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available... */ 
 
-fetch('https://api.github.com/users/AvinashS97')
-.then(Response=>{
-    return Response.json();
-})
-.then((data)=>{
-    console.log(data.avatar_url)
-})
-.catch((error)=>{
-    console.log(error);
-})
+// fetch('https://api.github.com/users/AvinashS97')
+// .then(Response=>{
+//     return Response.json();
+// })
+// .then((data)=>{
+//     console.log(data.avatar_url)
+// })
+// .catch((error)=>{
+//     console.log(error);
+// })

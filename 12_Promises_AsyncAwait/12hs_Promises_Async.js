@@ -162,7 +162,7 @@
 
 // // console.log(xhr.readyState); // 1 (Sent)
 // // xhr.onreadystatechange = function(){
-// //     console.log(xhr.readyState); // 
+// //     console.log(xhr.readyState); // gives the state value
 // // }
 // // xhr.send();
 
@@ -191,7 +191,7 @@
 // xhr.send();
 
 
-//! OR we can use API in another way of xml HttpRequest
+//! OR we can use API in another way of XMLHttpRequest()
 
 // const URL = "https://jsonplaceholder.typicode.com/posts";
 
