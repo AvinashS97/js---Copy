@@ -124,18 +124,43 @@ const postBtn = document.getElementById('post-btn');
 
 // const url = 'https://api.github.com/users/hiteshchoudhary';
 
-const getData = ()=>{
-    const xhr = new XMLHttpRequest;
-    xhr.open('GET', 'https://api.github.com/users/hiteshchoudhary');
+const sendHttpRequest = (method,url,data) =>{
+    //Now we do Promisify---
+    const promise = new Promise((resolve, reject)=>{
+        const xhr = new XMLHttpRequest;
+        xhr.open(method, url);
+        xhr.responseType = 'json';
+        if(data){
+            xhr.setRequestHeader('Content-Type','application/json')
+        }
+        xhr.onload= ()=>{ //Error handle in XHR
+            if(xhr.status>=400){
+                reject(xhr.response);
+            }else{
+                resolve(xhr.response);
+            }
+        }
 
-    xhr.onload= ()=>{
-        const data = JSON.parse(xhr.response);
-        console.log(data)
-    }
-    xhr.send();
+        //Error Handling
+        xhr.onerror= ()=>{reject('Something Error')}
+
+        xhr.send(JSON.stringify(data));
+    })  
+    return promise;
 }
 
-const sendData = ()=>{}
+const getData = ()=>{
+    sendHttpRequest('GET','https://reqres.in/api/register').then(responseData =>{console.log(responseData);
+    })
+}
+
+const sendData = ()=>{
+    sendHttpRequest('POST','https://reqres.in/api/register',{
+        email:'eve.holt@reqres.in',
+        // password:'pistol'
+    }).then(responseData =>{ console.log(responseData);
+    }).catch(err=>{console.log(err)})
+}
 
 getBtn.addEventListener('click',getData)
 postBtn.addEventListener('click',sendData)
