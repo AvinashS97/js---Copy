@@ -28,7 +28,7 @@
 //! export default ---> by using default keyword we don't have to use { } in main.js file and an access the file by any name or variable...
 //* *We can use only one default in js file...*/
 
-import P, {Person2} from './13Person.js';
+import P, { Person2 } from './13Person.js';
 const person = new P("Virat", "Kohli", 32)
 const person2 = new Person2("John", "Ibrahim", 25)
 person.info();
