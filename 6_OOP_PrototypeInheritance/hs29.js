@@ -34,7 +34,7 @@ const user2 = {
 // const func_bind=about.bind(user1,"singing","ChahatFateh")//bind->it store in function
 // func_bind();
 
-//! Window OBJECT Properties
+//! Window OBJECT Properties:-
 
 //* Alert ---> alert() method displays an alert box with a message and an OK button.
 // let a = window

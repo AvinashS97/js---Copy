@@ -13,7 +13,6 @@
 // }
 // outer();
 
-
 //* CLOSURES ---> A closure is the combination of a fns bundled together.
 //closure give us access to an outer fns scope from an inner fns.
 //function can return functions

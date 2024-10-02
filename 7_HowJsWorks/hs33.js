@@ -39,7 +39,7 @@ name = 'Mukul Latiyan';// referenceError
 //}
 //fun(); // Undefined
 
-//or
+//OR
 
 function fun() {
   let name;
