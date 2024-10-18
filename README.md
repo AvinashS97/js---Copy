@@ -5,7 +5,7 @@ This is my JavaScript learning repo where I learn javaScript and revise it.
 * Make sure you have a text editor or an IDE for writing JavaScript code.
 * You'll also need Node.js installed to run server-side JavaScript code. [Node.js download](https://nodejs.org/).
 
-**Links:-**
+# Links:-
 * [Html](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/)
 * [JavaScrpit](https://www.w3schools.com/js/)
@@ -20,5 +20,5 @@ For any questions or inquiries, please reach out to:
 
 Your Name: [Avinash Kumar]
 
-Project Link: [GitHub Repository](https://github.com/AvinashS97/js---Copy) 
-Happy Coding...👍 
+Project Link: [GitHub Repository] (https://github.com/AvinashS97/js---Copy) 
+Happy Coding...👍
