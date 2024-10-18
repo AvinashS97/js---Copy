@@ -12,7 +12,7 @@ console.log(FirstName.length); /* print the length-Property of Index*/
 console.log(FirstName[FirstName.length - 1]);  /* Print the last value of string */
 
 console.log("Trim"); /* Used for removing extra space b/w string. */
-let MyName = "  aVInAsH  ";
+let MyName = "  AvInAsH  ";
 console.log(MyName.length);
 let newName = MyName.trim();
 console.log(newName.length);

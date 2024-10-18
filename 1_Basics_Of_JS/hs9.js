@@ -12,6 +12,7 @@ while (i <= 10) {
 console.log("outside the loop");
 
 // // Ex---> Print the sum of N number
+
 let N = 0;
 let total = 0;
 while (N <= 10) {
