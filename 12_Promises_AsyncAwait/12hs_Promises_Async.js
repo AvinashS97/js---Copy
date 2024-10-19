@@ -240,7 +240,7 @@
 //Chaining of APi responses (Promise)...
 
 
-//? ii) fetch API (new ways)
+//? ii) fetch API (new ways ---> starts the process of fetching a resource from the network, returning a promise which is fulfilled once the resource is available. )
 // const URL = "https://jsonplaceholder.typicode.com/posts";
 // fetch(URL)
 //         .then(response =>{
@@ -256,6 +256,7 @@
 
 
 //? Fetch API with Async await ===>  use async and await keyword...
+
 const URL = "https://jsonplaceholder.typicode.com/posts";
 async function getposts() {
         const response = await fetch(URL);
