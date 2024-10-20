@@ -18,7 +18,7 @@ This is my JavaScript learning repo where I learn javaScript and revise it.
 
 For any questions or inquiries, please reach out to:
 
-Your Name: [Avinash Kumar]
+[Avinash Kumar]
 
 Project Link: [GitHub Repository] (https://github.com/AvinashS97/js---Copy) 
 Happy Coding...👍
