@@ -1,4 +1,3 @@
-
 export class Person2 {
     constructor(firstname, lastname, age) {
         this.firstname = firstname;
